@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<!-- Generated on 2026-10-03 sáb 11:38 -->
 <meta charset="utf-8"/>
 <title>Desarrollo de prototipos con IA</title>
 <meta name="author" content="Carlos León"/>
@@ -16,118 +15,204 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide">
-<h1 class="title">Desarrollo de prototipos con IA</h1><h2 class="author">Carlos León</h2><p class="date">Created: 2026-10-03 sáb 11:38</p>
+<section id="sec-title-slide" class="title-slide">
+<h1>Desarrollo de prototipos con IA</h1><h3>Máster de Videojuegos UCM</h3><h4>Carlos León</h4>
 </section>
+<style>
+section h1 .section-number-1,
+section h2 .section-number-2,
+section h3 .section-number-3,
+section h4 .section-number-4,
+section h5 .section-number-5,
+section h6 .section-number-6 {
+    display: none;
+}
+
+
+.reveal  p , .reveal  ul, .reveal .figure {
+    font-size: 80%;
+}
+
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    text-transform: none !important;
+}
+
+.reveal h1 {
+font-size: 160%;
+}
+.reveal h2{
+font-size: 150%;
+}
+.reveal h3{
+font-size: 100%;
+}
+.reveal h4{
+font-size: 90%;
+}
+
+.reveal strong,
+.reveal b {
+    color: orange;
+}
+
+.reveal .slides section:not(.title-slide) h1,
+.reveal .slides section:not(.title-slide) h2,
+.reveal .slides section:not(.title-slide) h3,
+.reveal .slides section:not(.title-slide) h4,
+.reveal .slides section:not(.title-slide) h5 {
+    font-size: 0.7em !important;
+    color: #999 !important;
+    text-align: left !important;
+}
+</style>
 <section>
-<section id="slide-1">
-<h2 id="1"><span class="section-number-2">1.</span> Índice</h2>
+<section id="slide-org8d7511f">
+<h2 id="org8d7511f">Profesor</h2>
 <ul>
-<li><a href="#/slide-2" class="forwardlink">Herramientas de IA (I)</a></li>
-<li><a href="#/slide-3" class="forwardlink">Herramientas de IA (II)</a></li>
-<li><a href="#/slide-4" class="forwardlink">Desarrollo en Phaser con IA (I)</a></li>
-<li><a href="#/slide-5" class="forwardlink">Desarrollo en Phaser con IA (II)</a></li>
-<li><a href="#/slide-6" class="forwardlink">Desarrollo con IA (I)</a></li>
-<li><a href="#/slide-7" class="forwardlink">Desarrollo con IA (II)</a></li>
-<li><a href="#/slide-8" class="forwardlink">Desarrollo con IA (III)</a></li>
+<li>Carlos León &lt;<a href="mailto:cleon@ucm.es">cleon@ucm.es</a>&gt;</li>
+<li>Profesor FdI</li>
+<li>Docencia MVJ: Prototipado con IA, arquitectura UE, prácticas diseño de niveles, tutor de proyectos</li>
+<li>Investigación: Videojuegos, IA, Creatividad Computacional y Sistemas Cognitivos</li>
+<li><a href="http://nil.fdi.ucm.es">Grupo de investigación NIL</a></li>
+<li>Despacho 444 FdI</li>
 
 </ul>
 </section>
 </section>
 <section>
-<section id="slide-2">
-<h2 id="2"><span class="section-number-2">2.</span> Herramientas de IA (I)</h2>
-<div class="outline-text-2" id="text-2">
+<section id="slide-orgffe609e">
+<h2 id="orgffe609e">Índice</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-1">1. Herramientas de IA (I)</a></li>
+<li><a href="#/slide-2">2. Herramientas de IA (II)</a></li>
+<li><a href="#/slide-3">3. Desarrollo en Phaser con IA (I)</a></li>
+<li><a href="#/slide-4">4. Desarrollo en Phaser con IA (II)</a></li>
+<li><a href="#/slide-5">5. Desarrollo con IA (I)</a></li>
+<li><a href="#/slide-6">6. Desarrollo con IA (II)</a></li>
+<li><a href="#/slide-7">7. Desarrollo con IA (III)</a></li>
+</ul>
 </div>
 </section>
-<section id="slide-2-1">
-<h3 id="2-1"><span class="section-number-3">2.1.</span> Cómo funciona una IA</h3>
-<div class="outline-text-3" id="text-2-1">
+</section>
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1.</span> Herramientas de IA (I)</h2>
+<div class="outline-text-2" id="text-1">
 </div>
 </section>
-<section id="slide-2-1-1">
-<h4 id="2-1-1"><span class="section-number-4">2.1.1.</span> </h4>
+<section id="slide-1-1">
+<h3 id="1-1"><span class="section-number-3">1.1.</span> Objetivo de este módulo</h3>
+<div class="org-center">
+<p>
+Poder crear diseños y probar su funcionamiento sin necesidad de programar los prototipos
+</p>
+</div>
+</section>
+<section id="slide-1-2">
+<h3 id="1-2"><span class="section-number-3">1.2.</span> Qué vamos a conseguir</h3>
+<ul>
+<li>Entender cómo funciona una IA generativa de código</li>
+<li>Conocer las herramientas necesarias</li>
+<li>Aprender a hacer <i>vibe coding</i></li>
+<li>Transformar un GDD en un juego sin programar</li>
+<li>Pulirlo y adaptarlo hasta que represente <b>vuestra idea</b></li>
+<li>Poder jugar a vuestro juego en navegador, escritorio o móvil*</li>
+<li>Publicarlo y compartirlo fácilmente para que se pueda jugar con una URL</li>
+
+</ul>
+
+<p style="font-size: 50%; display:block; margin-top: 4em">*No lo montaremos en móvil aquí, pero se puede</small>
+</section>
+<section id="slide-1-3">
+<h3 id="1-3"><span class="section-number-3">1.3.</span> Cómo funciona una IA</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+</section>
+<section id="slide-1-3-1">
+<h4 id="1-3-1"><span class="section-number-4">1.3.1.</span> </h4>
 <ul>
 <li>¡Hola! ¿Cómo estás?</li>
-<li>Muy bien, ¿y <b>&hellip;</b>
+<li>Muy bien, ¿y &hellip;
 <ul>
-<li class="fragment appear"><b>&hellip;</b> tú?</li>
-<li class="fragment appear"><b>&hellip;</b> vosotros?</li>
-<li class="fragment appear"><b>&hellip;</b> tu hermano?</li>
-<li class="fragment appear"><b>&hellip;</b> ensalada de tomate?</li>
+<li class="fragment appear">&hellip; tú?</li>
+<li class="fragment appear">&hellip; vosotros?</li>
+<li class="fragment appear">&hellip; tu hermano?</li>
+<li class="fragment appear">&hellip; ensalada de tomate?</li>
 
 </ul></li>
 
 </ul>
 </section>
-<section id="slide-2-1-2">
-<h4 id="2-1-2"><span class="section-number-4">2.1.2.</span> </h4>
+<section id="slide-1-3-2">
+<h4 id="1-3-2"><span class="section-number-4">1.3.2.</span> </h4>
 <div class="org-center">
 <p>
 ¿Cómo <b>predecimos</b> las siguientes palabras?
 </p>
 </div>
 </section>
-<section id="slide-2-1-3">
-<h4 id="2-1-3"><span class="section-number-4">2.1.3.</span> ¿Cómo <b>entiende</b> el lenguaje un ordenador?</h4>
+<section id="slide-1-3-3">
+<h4 id="1-3-3"><span class="section-number-4">1.3.3.</span> ¿Cómo <b>entiende</b> el lenguaje un ordenador?</h4>
 <ul>
 <li>8739874 18739874</li>
-<li>084098091 170980470  09280948098 28 9409808 <b>&hellip;</b>
+<li>084098091 170980470  09280948098 28 9409808 &hellip;
 <ul>
-<li class="fragment appear"><b>&hellip;</b> 09802984098?</li>
-<li class="fragment appear"><b>&hellip;</b> 09820349809?</li>
-<li class="fragment appear"><b>&hellip;</b> 0917987398 98579871?</li>
-<li class="fragment appear"><b>&hellip;</b> 7138712987 581978 94 9871987?</li>
+<li class="fragment appear">&hellip; 09802984098?</li>
+<li class="fragment appear">&hellip; 09820349809?</li>
+<li class="fragment appear">&hellip; 0917987398 98579871?</li>
+<li class="fragment appear">&hellip; 7138712987 581978 94 9871987?</li>
 
 </ul></li>
 
 </ul>
 </section>
-<section id="slide-2-1-4">
-<h4 id="2-1-4"><span class="section-number-4">2.1.4.</span> </h4>
+<section id="slide-1-3-4">
+<h4 id="1-3-4"><span class="section-number-4">1.3.4.</span> </h4>
 <div class="org-center">
 <p>
 ¿Cómo puede predecir un ordenador?
 </p>
 </div>
 </section>
-<section id="slide-2-1-5">
-<h4 id="2-1-5"><span class="section-number-4">2.1.5.</span> </h4>
+<section id="slide-1-3-5">
+<h4 id="1-3-5"><span class="section-number-4">1.3.5.</span> </h4>
 
-<div id="org7bcc481" class="figure">
+<div id="org4a3746a" class="figure">
 <p><img src="2026-02-06_10-10-48_screenshot_pre.png" alt="2026-02-06_10-10-48_screenshot_pre.png" width="50%" />
 </p>
 <p><span class="figure-number">Figura 1: </span>¡Es todo <b>estadística</b>!</p>
 </div>
 </section>
-<section id="slide-2-1-6">
-<h4 id="2-1-6"><span class="section-number-4">2.1.6.</span> </h4>
+<section id="slide-1-3-6">
+<h4 id="1-3-6"><span class="section-number-4">1.3.6.</span> </h4>
 
-<div id="org4791dfb" class="figure">
+<div id="org3f11264" class="figure">
 <p><img src="2026-02-06_10-10-48_screenshot.png" alt="2026-02-06_10-10-48_screenshot.png" width="50%" />
 </p>
 <p><span class="figure-number">Figura 2: </span>Pero le llamamos <b>aprendizaje máquina</b></p>
 </div>
 </section>
-<section id="slide-2-1-7">
-<h4 id="2-1-7"><span class="section-number-4">2.1.7.</span> </h4>
+<section id="slide-1-3-7">
+<h4 id="1-3-7"><span class="section-number-4">1.3.7.</span> </h4>
 
-<div id="org523ecea" class="figure">
+<div id="org1d25292" class="figure">
 <p><img src="2026-02-06_10-28-58_screenshot.png" alt="2026-02-06_10-28-58_screenshot.png" width="80%" />
 </p>
 <p><span class="figure-number">Figura 3: </span>Y son modelos <b>complejos</b></p>
 </div>
 </section>
-<section id="slide-2-1-8">
-<h4 id="2-1-8"><span class="section-number-4">2.1.8.</span> El 30 de noviembre de 2022</h4>
+<section id="slide-1-3-8">
+<h4 id="1-3-8"><span class="section-number-4">1.3.8.</span> El 30 de noviembre de 2022</h4>
 <div class="org-center">
 <p>
 ¿Cómo se puede, con números, hacer ChatGPT?
 </p>
 </div>
 </section>
-<section id="slide-2-1-9">
-<h4 id="2-1-9"><span class="section-number-4">2.1.9.</span> Las ideas no son nuevas, ¿qué ha <b>cambiado</b>?</h4>
+<section id="slide-1-3-9">
+<h4 id="1-3-9"><span class="section-number-4">1.3.9.</span> Las ideas no son nuevas, ¿qué ha <b>cambiado</b>?</h4>
 <ul>
 <li class="fragment appear">Capacidad de cómputo</li>
 <li class="fragment appear">Modelos nuevos</li>
@@ -135,8 +220,8 @@
 
 </ul>
 </section>
-<section id="slide-2-1-10">
-<h4 id="2-1-10"><span class="section-number-4">2.1.10.</span> Gran escala</h4>
+<section id="slide-1-3-10">
+<h4 id="1-3-10"><span class="section-number-4">1.3.10.</span> Gran escala</h4>
 <ul>
 <li>Varios meses de entrenamiento</li>
 <li>Decenas de millones de dólares</li>
@@ -144,41 +229,41 @@
 
 </ul>
 </section>
-<section id="slide-2-1-11">
-<h4 id="2-1-11"><span class="section-number-4">2.1.11.</span> </h4>
+<section id="slide-1-3-11">
+<h4 id="1-3-11"><span class="section-number-4">1.3.11.</span> </h4>
 <div class="org-center">
 <p>
 ¿Pero por qué funciona <b>tan bien</b>?
 </p>
 </div>
 </section>
-<section id="slide-2-1-12">
-<h4 id="2-1-12"><span class="section-number-4">2.1.12.</span> </h4>
+<section id="slide-1-3-12">
+<h4 id="1-3-12"><span class="section-number-4">1.3.12.</span> </h4>
 
-<div id="org591ec70" class="figure">
+<div id="org7c0ac2b" class="figure">
 <p><img src="2026-02-06_11-01-55_screenshot.png" alt="2026-02-06_11-01-55_screenshot.png" width="30%" />
 </p>
 <p><span class="figure-number">Figura 4: </span>Arquitectura <i>Transformer</i></p>
 </div>
 </section>
-<section id="slide-2-1-13">
-<h4 id="2-1-13"><span class="section-number-4">2.1.13.</span> </h4>
+<section id="slide-1-3-13">
+<h4 id="1-3-13"><span class="section-number-4">1.3.13.</span> </h4>
 <div class="org-center">
 <p>
 Analiza <b>todas las palabras a la vez</b>, no una por una
 </p>
 </div>
 </section>
-<section id="slide-2-1-14">
-<h4 id="2-1-14"><span class="section-number-4">2.1.14.</span> </h4>
+<section id="slide-1-3-14">
+<h4 id="1-3-14"><span class="section-number-4">1.3.14.</span> </h4>
 <div class="org-center">
 <p>
 Representa las palabras como vectores de números, y lo hace analizando muchísimas frases ya escritas por personas
 </p>
 </div>
 </section>
-<section id="slide-2-1-15">
-<h4 id="2-1-15"><span class="section-number-4">2.1.15.</span> Ejemplos de encoding</h4>
+<section id="slide-1-3-15">
+<h4 id="1-3-15"><span class="section-number-4">1.3.15.</span> Ejemplos de encoding</h4>
 <div class="org-src-container">
 
 <pre><code class="python" >"El perro corre" =
@@ -189,24 +274,24 @@ Representa las palabras como vectores de números, y lo hace analizando muchísi
 </code></pre>
 </div>
 </section>
-<section id="slide-2-1-16">
-<h4 id="2-1-16"><span class="section-number-4">2.1.16.</span> Espacio latente = &laquo;mundo interno&raquo; donde la IA piensa</h4>
+<section id="slide-1-3-16">
+<h4 id="1-3-16"><span class="section-number-4">1.3.16.</span> Espacio latente = &laquo;mundo interno&raquo; donde la IA piensa</h4>
 <ul>
 <li>Cada conjunto de números es un <b>concepto</b></li>
 <li>Las palabras que solemos usar de forma relacionada están <b>cerca</b></li>
 
 </ul>
 </section>
-<section id="slide-2-1-17">
-<h4 id="2-1-17"><span class="section-number-4">2.1.17.</span> Generar</h4>
+<section id="slide-1-3-17">
+<h4 id="1-3-17"><span class="section-number-4">1.3.17.</span> Generar</h4>
 <div class="org-center">
 <p>
 Con esto, ya solo nos queda <b>predecir</b>, con estadística, la próxima palabra más probable
 </p>
 </div>
 </section>
-<section id="slide-2-1-18">
-<h4 id="2-1-18"><span class="section-number-4">2.1.18.</span> Hasta aquí</h4>
+<section id="slide-1-3-18">
+<h4 id="1-3-18"><span class="section-number-4">1.3.18.</span> Hasta aquí</h4>
 <ul>
 <li>Tenemos mucho texto escrito por humanos (Internet)</li>
 <li>Analizamos las palabras y les asignamos números cercanos si las palabras aparecen relacionadas</li>
@@ -214,8 +299,8 @@ Con esto, ya solo nos queda <b>predecir</b>, con estadística, la próxima palab
 
 </ul>
 </section>
-<section id="slide-2-1-19">
-<h4 id="2-1-19"><span class="section-number-4">2.1.19.</span> </h4>
+<section id="slide-1-3-19">
+<h4 id="1-3-19"><span class="section-number-4">1.3.19.</span> </h4>
 <div class="org-center">
 <p>
 ChatGPT no <b>sabe</b> nada <br />
@@ -235,8 +320,8 @@ Solo <b>predice la próxima palabra más razonable</b>
 </p>
 </div>
 </section>
-<section id="slide-2-1-20">
-<h4 id="2-1-20"><span class="section-number-4">2.1.20.</span> Conclusión</h4>
+<section id="slide-1-3-20">
+<h4 id="1-3-20"><span class="section-number-4">1.3.20.</span> Conclusión</h4>
 <ul>
 <li>La IA moderna no es magia, ni un modelo humano: es <b>estadística</b></li>
 <li>Usar cantidad casi infinita de <b>ejemplos</b> ha hecho posible que se parezca a lo que hacemos los humanos</li>
@@ -244,38 +329,52 @@ Solo <b>predice la próxima palabra más razonable</b>
 
 </ul>
 </section>
+<section id="slide-1-4">
+<h3 id="1-4"><span class="section-number-3">1.4.</span> Herramientas de IA para generar</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+</section>
+<section id="slide-1-4-1">
+<h4 id="1-4-1"><span class="section-number-4">1.4.1.</span> Webs con chat</h4>
+<ul>
+<li><a href="https://chatgpt.com/">ChatGPT</a></li>
+<li><a href="https://gemini.google.com/">Gemini</a></li>
+<li><a href="https://copilot.microsoft.com/">Microsoft Copilot</a></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2.</span> Herramientas de IA (II)</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-2-1">
+<h3 id="2-1"><span class="section-number-3">2.1.</span> Vibe coding</h3>
+</section>
 </section>
 <section>
 <section id="slide-3">
-<h2 id="3"><span class="section-number-2">3.</span> Herramientas de IA (II)</h2>
+<h2 id="3"><span class="section-number-2">3.</span> Desarrollo en Phaser con IA (I)</h2>
 <div class="outline-text-2" id="text-3">
 </div>
 </section>
 <section id="slide-3-1">
-<h3 id="3-1"><span class="section-number-3">3.1.</span> Vibe coding</h3>
-</section>
-</section>
-<section>
-<section id="slide-4">
-<h2 id="4"><span class="section-number-2">4.</span> Desarrollo en Phaser con IA (I)</h2>
-<div class="outline-text-2" id="text-4">
+<h3 id="3-1"><span class="section-number-3">3.1.</span> Vibe coding con Phaser</h3>
+<div class="outline-text-3" id="text-3-1">
 </div>
 </section>
-<section id="slide-4-1">
-<h3 id="4-1"><span class="section-number-3">4.1.</span> Vibe coding con Phaser</h3>
-<div class="outline-text-3" id="text-4-1">
-</div>
-</section>
-<section id="slide-4-1-1">
-<h4 id="4-1-1"><span class="section-number-4">4.1.1.</span> Versiones de Phaser</h4>
+<section id="slide-3-1-1">
+<h4 id="3-1-1"><span class="section-number-4">3.1.1.</span> Versiones de Phaser</h4>
 <ul>
 <li>Es muy posible que el LLM tenga mucho contenido de versiones anteriores de Phaser (v2 y v3)</li>
 <li>Hay que saber identificar los problemas de API y corregir al modelo</li>
 
 </ul>
 </section>
-<section id="slide-4-2">
-<h3 id="4-2"><span class="section-number-3">4.2.</span> Simulación</h3>
+<section id="slide-3-2">
+<h3 id="3-2"><span class="section-number-3">3.2.</span> Simulación</h3>
 <ul>
 <li>Tener una cuenta en GitHub</li>
 <li>En GitHub, ir al repositorio de la <a href="https://github.com/cleongh/plantillaphaser">plantilla de Phaser</a></li>
@@ -301,32 +400,27 @@ Solo <b>predice la próxima palabra más razonable</b>
 </code></pre>
 </div>
 </section>
-<section id="slide-4-3">
-<h3 id="4-3"><span class="section-number-3">4.3.</span> </h3>
+<section id="slide-3-3">
+<h3 id="3-3"><span class="section-number-3">3.3.</span> </h3>
 
-<div id="org6a22d75" class="figure">
+<div id="orgc1af8aa" class="figure">
 <p><img src="clipboard-20261002T133141.png" alt="clipboard-20261002T133141.png" />
 </p>
 </div>
 </section>
-<section id="slide-4-4">
-<h3 id="4-4"><span class="section-number-3">4.4.</span> </h3>
+<section id="slide-3-4">
+<h3 id="3-4"><span class="section-number-3">3.4.</span> </h3>
 </section>
-<section id="slide-4-5">
-<h3 id="4-5"><span class="section-number-3">4.5.</span> </h3>
+<section id="slide-3-5">
+<h3 id="3-5"><span class="section-number-3">3.5.</span> </h3>
 
-<div id="org28dbf90" class="figure">
+<div id="org5fe340a" class="figure">
 <p><img src="clipboard-20261002T183533.png" alt="clipboard-20261002T183533.png" />
 </p>
 </div>
-
-
-<p>
-18:46-18:52 o por ahí
-</p>
 </section>
-<section id="slide-4-6">
-<h3 id="4-6"><span class="section-number-3">4.6.</span> Podéis cambiar los datos de package.json</h3>
+<section id="slide-3-6">
+<h3 id="3-6"><span class="section-number-3">3.6.</span> Podéis cambiar los datos de package.json</h3>
 <div class="org-src-container">
 
 <pre><code class="json" >{
@@ -345,28 +439,28 @@ Solo <b>predice la próxima palabra más razonable</b>
 </code></pre>
 </div>
 </section>
-<section id="slide-4-7">
-<h3 id="4-7"><span class="section-number-3">4.7.</span> Abrir el proyecto en VSCode</h3>
+<section id="slide-3-7">
+<h3 id="3-7"><span class="section-number-3">3.7.</span> Abrir el proyecto en VSCode</h3>
 
 </section>
-<section id="slide-4-8">
-<h3 id="4-8"><span class="section-number-3">4.8.</span> Y pedirle nos haga un &laquo;Link to the Past&raquo;</h3>
+<section id="slide-3-8">
+<h3 id="3-8"><span class="section-number-3">3.8.</span> Y pedirle nos haga un &laquo;Link to the Past&raquo;</h3>
 
-<div id="orgb2567e0" class="figure">
+<div id="orgba14dd3" class="figure">
 <p><img src="clipboard-20261002T184359.png" alt="clipboard-20261002T184359.png" />
 </p>
 </div>
 </section>
-<section id="slide-4-9">
-<h3 id="4-9"><span class="section-number-3">4.9.</span> Y el resultado es funcional (GPT-6 Luna)</h3>
+<section id="slide-3-9">
+<h3 id="3-9"><span class="section-number-3">3.9.</span> Y el resultado es funcional (GPT-6 Luna)</h3>
 
-<div id="org944365c" class="figure">
+<div id="org0fc96e3" class="figure">
 <p><img src="clipboard-20261002T185612.png" alt="clipboard-20261002T185612.png" />
 </p>
 </div>
 </section>
-<section id="slide-4-10">
-<h3 id="4-10"><span class="section-number-3">4.10.</span> No es Zelda, pero</h3>
+<section id="slide-3-10">
+<h3 id="3-10"><span class="section-number-3">3.10.</span> No es Zelda, pero</h3>
 <ul>
 <li>Funciona (teclas del cursor + espacio)</li>
 <li>3 bichos que nos persiguen y nos quitan vida</li>
@@ -379,55 +473,55 @@ Solo <b>predice la próxima palabra más razonable</b>
 <b>Ha hecho un juego funcional en unos minutos</b>  
 </p>
 </section>
-<section id="slide-4-11">
-<h3 id="4-11"><span class="section-number-3">4.11.</span> Hacer <i>commit</i> de Git</h3>
+<section id="slide-3-11">
+<h3 id="3-11"><span class="section-number-3">3.11.</span> Hacer <i>commit</i> de Git</h3>
 <ul>
 <li>Es necesario tener bien configurado el cliente de Git porque <b>el agente usa línea de comandos</b></li>
 
 </ul>
 </section>
-<section id="slide-4-12">
-<h3 id="4-12"><span class="section-number-3">4.12.</span> <i>Commits</i> automáticos</h3>
+<section id="slide-3-12">
+<h3 id="3-12"><span class="section-number-3">3.12.</span> <i>Commits</i> automáticos</h3>
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4.</span> Desarrollo en Phaser con IA (II)</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+</section>
+<section id="slide-4-1">
+<h3 id="4-1"><span class="section-number-3">4.1.</span> Vibe coding top-down y bottom-up</h3>
 </section>
 </section>
 <section>
 <section id="slide-5">
-<h2 id="5"><span class="section-number-2">5.</span> Desarrollo en Phaser con IA (II)</h2>
+<h2 id="5"><span class="section-number-2">5.</span> Desarrollo con IA (I)</h2>
 <div class="outline-text-2" id="text-5">
 </div>
 </section>
 <section id="slide-5-1">
-<h3 id="5-1"><span class="section-number-3">5.1.</span> Vibe coding top-down y bottom-up</h3>
+<h3 id="5-1"><span class="section-number-3">5.1.</span> Assets en vibe coding</h3>
 </section>
 </section>
 <section>
 <section id="slide-6">
-<h2 id="6"><span class="section-number-2">6.</span> Desarrollo con IA (I)</h2>
+<h2 id="6"><span class="section-number-2">6.</span> Desarrollo con IA (II)</h2>
 <div class="outline-text-2" id="text-6">
 </div>
 </section>
 <section id="slide-6-1">
-<h3 id="6-1"><span class="section-number-3">6.1.</span> Assets en vibe coding</h3>
+<h3 id="6-1"><span class="section-number-3">6.1.</span> Documentación y QA con v</h3>
 </section>
 </section>
 <section>
 <section id="slide-7">
-<h2 id="7"><span class="section-number-2">7.</span> Desarrollo con IA (II)</h2>
+<h2 id="7"><span class="section-number-2">7.</span> Desarrollo con IA (III)</h2>
 <div class="outline-text-2" id="text-7">
 </div>
 </section>
 <section id="slide-7-1">
-<h3 id="7-1"><span class="section-number-3">7.1.</span> Documentación y QA con v</h3>
-</section>
-</section>
-<section>
-<section id="slide-8">
-<h2 id="8"><span class="section-number-2">8.</span> Desarrollo con IA (III)</h2>
-<div class="outline-text-2" id="text-8">
-</div>
-</section>
-<section id="slide-8-1">
-<h3 id="8-1"><span class="section-number-3">8.1.</span> Evolución y adaptación a cambios</h3>
+<h3 id="7-1"><span class="section-number-3">7.1.</span> Evolución y adaptación a cambios</h3>
 </section>
 </section>
 </div>
@@ -444,7 +538,7 @@ Reveal.initialize({
 
 controls: true,
 progress: true,
-history: false,
+history: true,
 center: true,
 slideNumber: 'c',
 rollingLinks: false,
