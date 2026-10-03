@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Generated on 2026-10-03 sáb 11:38 -->
+<meta charset="utf-8"/>
+<title>Desarrollo de prototipos con IA</title>
+<meta name="author" content="Carlos León"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/plugin/highlight/zenburn.css"/>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Desarrollo de prototipos con IA</h1><h2 class="author">Carlos León</h2><p class="date">Created: 2026-10-03 sáb 11:38</p>
+</section>
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1.</span> Índice</h2>
+<ul>
+<li><a href="#/slide-2" class="forwardlink">Herramientas de IA (I)</a></li>
+<li><a href="#/slide-3" class="forwardlink">Herramientas de IA (II)</a></li>
+<li><a href="#/slide-4" class="forwardlink">Desarrollo en Phaser con IA (I)</a></li>
+<li><a href="#/slide-5" class="forwardlink">Desarrollo en Phaser con IA (II)</a></li>
+<li><a href="#/slide-6" class="forwardlink">Desarrollo con IA (I)</a></li>
+<li><a href="#/slide-7" class="forwardlink">Desarrollo con IA (II)</a></li>
+<li><a href="#/slide-8" class="forwardlink">Desarrollo con IA (III)</a></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2.</span> Herramientas de IA (I)</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-2-1">
+<h3 id="2-1"><span class="section-number-3">2.1.</span> Cómo funciona una IA</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+</section>
+<section id="slide-2-1-1">
+<h4 id="2-1-1"><span class="section-number-4">2.1.1.</span> </h4>
+<ul>
+<li>¡Hola! ¿Cómo estás?</li>
+<li>Muy bien, ¿y <b>&hellip;</b>
+<ul>
+<li class="fragment appear"><b>&hellip;</b> tú?</li>
+<li class="fragment appear"><b>&hellip;</b> vosotros?</li>
+<li class="fragment appear"><b>&hellip;</b> tu hermano?</li>
+<li class="fragment appear"><b>&hellip;</b> ensalada de tomate?</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-2-1-2">
+<h4 id="2-1-2"><span class="section-number-4">2.1.2.</span> </h4>
+<div class="org-center">
+<p>
+¿Cómo <b>predecimos</b> las siguientes palabras?
+</p>
+</div>
+</section>
+<section id="slide-2-1-3">
+<h4 id="2-1-3"><span class="section-number-4">2.1.3.</span> ¿Cómo <b>entiende</b> el lenguaje un ordenador?</h4>
+<ul>
+<li>8739874 18739874</li>
+<li>084098091 170980470  09280948098 28 9409808 <b>&hellip;</b>
+<ul>
+<li class="fragment appear"><b>&hellip;</b> 09802984098?</li>
+<li class="fragment appear"><b>&hellip;</b> 09820349809?</li>
+<li class="fragment appear"><b>&hellip;</b> 0917987398 98579871?</li>
+<li class="fragment appear"><b>&hellip;</b> 7138712987 581978 94 9871987?</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-2-1-4">
+<h4 id="2-1-4"><span class="section-number-4">2.1.4.</span> </h4>
+<div class="org-center">
+<p>
+¿Cómo puede predecir un ordenador?
+</p>
+</div>
+</section>
+<section id="slide-2-1-5">
+<h4 id="2-1-5"><span class="section-number-4">2.1.5.</span> </h4>
+
+<div id="org7bcc481" class="figure">
+<p><img src="2026-02-06_10-10-48_screenshot_pre.png" alt="2026-02-06_10-10-48_screenshot_pre.png" width="50%" />
+</p>
+<p><span class="figure-number">Figura 1: </span>¡Es todo <b>estadística</b>!</p>
+</div>
+</section>
+<section id="slide-2-1-6">
+<h4 id="2-1-6"><span class="section-number-4">2.1.6.</span> </h4>
+
+<div id="org4791dfb" class="figure">
+<p><img src="2026-02-06_10-10-48_screenshot.png" alt="2026-02-06_10-10-48_screenshot.png" width="50%" />
+</p>
+<p><span class="figure-number">Figura 2: </span>Pero le llamamos <b>aprendizaje máquina</b></p>
+</div>
+</section>
+<section id="slide-2-1-7">
+<h4 id="2-1-7"><span class="section-number-4">2.1.7.</span> </h4>
+
+<div id="org523ecea" class="figure">
+<p><img src="2026-02-06_10-28-58_screenshot.png" alt="2026-02-06_10-28-58_screenshot.png" width="80%" />
+</p>
+<p><span class="figure-number">Figura 3: </span>Y son modelos <b>complejos</b></p>
+</div>
+</section>
+<section id="slide-2-1-8">
+<h4 id="2-1-8"><span class="section-number-4">2.1.8.</span> El 30 de noviembre de 2022</h4>
+<div class="org-center">
+<p>
+¿Cómo se puede, con números, hacer ChatGPT?
+</p>
+</div>
+</section>
+<section id="slide-2-1-9">
+<h4 id="2-1-9"><span class="section-number-4">2.1.9.</span> Las ideas no son nuevas, ¿qué ha <b>cambiado</b>?</h4>
+<ul>
+<li class="fragment appear">Capacidad de cómputo</li>
+<li class="fragment appear">Modelos nuevos</li>
+<li class="fragment appear"><b>Muchos datos</b></li>
+
+</ul>
+</section>
+<section id="slide-2-1-10">
+<h4 id="2-1-10"><span class="section-number-4">2.1.10.</span> Gran escala</h4>
+<ul>
+<li>Varios meses de entrenamiento</li>
+<li>Decenas de millones de dólares</li>
+<li>Decenas de terabytes de información</li>
+
+</ul>
+</section>
+<section id="slide-2-1-11">
+<h4 id="2-1-11"><span class="section-number-4">2.1.11.</span> </h4>
+<div class="org-center">
+<p>
+¿Pero por qué funciona <b>tan bien</b>?
+</p>
+</div>
+</section>
+<section id="slide-2-1-12">
+<h4 id="2-1-12"><span class="section-number-4">2.1.12.</span> </h4>
+
+<div id="org591ec70" class="figure">
+<p><img src="2026-02-06_11-01-55_screenshot.png" alt="2026-02-06_11-01-55_screenshot.png" width="30%" />
+</p>
+<p><span class="figure-number">Figura 4: </span>Arquitectura <i>Transformer</i></p>
+</div>
+</section>
+<section id="slide-2-1-13">
+<h4 id="2-1-13"><span class="section-number-4">2.1.13.</span> </h4>
+<div class="org-center">
+<p>
+Analiza <b>todas las palabras a la vez</b>, no una por una
+</p>
+</div>
+</section>
+<section id="slide-2-1-14">
+<h4 id="2-1-14"><span class="section-number-4">2.1.14.</span> </h4>
+<div class="org-center">
+<p>
+Representa las palabras como vectores de números, y lo hace analizando muchísimas frases ya escritas por personas
+</p>
+</div>
+</section>
+<section id="slide-2-1-15">
+<h4 id="2-1-15"><span class="section-number-4">2.1.15.</span> Ejemplos de encoding</h4>
+<div class="org-src-container">
+
+<pre><code class="python" >"El perro corre" =
+    [ 0.21, -0.34, 0.89, 1.12, -0.56, 0.04, ... ]
+
+"El gato corre" =
+   [ 0.24, -0.31, 0.85, 1.08, -0.52, 0.06, ... ]
+</code></pre>
+</div>
+</section>
+<section id="slide-2-1-16">
+<h4 id="2-1-16"><span class="section-number-4">2.1.16.</span> Espacio latente = &laquo;mundo interno&raquo; donde la IA piensa</h4>
+<ul>
+<li>Cada conjunto de números es un <b>concepto</b></li>
+<li>Las palabras que solemos usar de forma relacionada están <b>cerca</b></li>
+
+</ul>
+</section>
+<section id="slide-2-1-17">
+<h4 id="2-1-17"><span class="section-number-4">2.1.17.</span> Generar</h4>
+<div class="org-center">
+<p>
+Con esto, ya solo nos queda <b>predecir</b>, con estadística, la próxima palabra más probable
+</p>
+</div>
+</section>
+<section id="slide-2-1-18">
+<h4 id="2-1-18"><span class="section-number-4">2.1.18.</span> Hasta aquí</h4>
+<ul>
+<li>Tenemos mucho texto escrito por humanos (Internet)</li>
+<li>Analizamos las palabras y les asignamos números cercanos si las palabras aparecen relacionadas</li>
+<li>Cuando tenemos unas pocas palabras escritas, ya podemos predecir la siguiente, y <b>repetimos</b></li>
+
+</ul>
+</section>
+<section id="slide-2-1-19">
+<h4 id="2-1-19"><span class="section-number-4">2.1.19.</span> </h4>
+<div class="org-center">
+<p>
+ChatGPT no <b>sabe</b> nada <br />
+</p>
+<p class="fragment appear">
+No <b>piensa</b><br />
+</p>
+<p class="fragment appear">
+No <b>entiende</b>
+</p>
+</div>
+
+
+<div class="org-center">
+<p class="fragment appear">
+Solo <b>predice la próxima palabra más razonable</b>
+</p>
+</div>
+</section>
+<section id="slide-2-1-20">
+<h4 id="2-1-20"><span class="section-number-4">2.1.20.</span> Conclusión</h4>
+<ul>
+<li>La IA moderna no es magia, ni un modelo humano: es <b>estadística</b></li>
+<li>Usar cantidad casi infinita de <b>ejemplos</b> ha hecho posible que se parezca a lo que hacemos los humanos</li>
+<li>Hay mucha IA <i>diferente</i> que se sigue usando</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3.</span> Herramientas de IA (II)</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+</section>
+<section id="slide-3-1">
+<h3 id="3-1"><span class="section-number-3">3.1.</span> Vibe coding</h3>
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4.</span> Desarrollo en Phaser con IA (I)</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+</section>
+<section id="slide-4-1">
+<h3 id="4-1"><span class="section-number-3">4.1.</span> Vibe coding con Phaser</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+</section>
+<section id="slide-4-1-1">
+<h4 id="4-1-1"><span class="section-number-4">4.1.1.</span> Versiones de Phaser</h4>
+<ul>
+<li>Es muy posible que el LLM tenga mucho contenido de versiones anteriores de Phaser (v2 y v3)</li>
+<li>Hay que saber identificar los problemas de API y corregir al modelo</li>
+
+</ul>
+</section>
+<section id="slide-4-2">
+<h3 id="4-2"><span class="section-number-3">4.2.</span> Simulación</h3>
+<ul>
+<li>Tener una cuenta en GitHub</li>
+<li>En GitHub, ir al repositorio de la <a href="https://github.com/cleongh/plantillaphaser">plantilla de Phaser</a></li>
+<li>Pinchar en  <img src="clipboard-20261002T132319.png" alt="clipboard-20261002T132319.png" />  → <code>Create new repository</code></li>
+
+</ul>
+
+</section>
+<section>
+
+<ul>
+<li>Creará un repositorio nuevo con una copia de la plantilla</li>
+<li>Bajamos el repositorio con <a href="https://github.com/apps/desktop">GitHub Desktop</a> (recomendado), Tortoise o línea de comandos:</li>
+
+</ul>
+
+<div class="org-src-container">
+
+<pre><code class="bash" ># Atención a poner la URL de SSH si queremos hacer `push' después
+
+# Ejemplo:
+&lt;cleon@fdi.ucm.es ~&gt;$ git clone git@github.com:cleongh/mvjvibecoding.git
+</code></pre>
+</div>
+</section>
+<section id="slide-4-3">
+<h3 id="4-3"><span class="section-number-3">4.3.</span> </h3>
+
+<div id="org6a22d75" class="figure">
+<p><img src="clipboard-20261002T133141.png" alt="clipboard-20261002T133141.png" />
+</p>
+</div>
+</section>
+<section id="slide-4-4">
+<h3 id="4-4"><span class="section-number-3">4.4.</span> </h3>
+</section>
+<section id="slide-4-5">
+<h3 id="4-5"><span class="section-number-3">4.5.</span> </h3>
+
+<div id="org28dbf90" class="figure">
+<p><img src="clipboard-20261002T183533.png" alt="clipboard-20261002T183533.png" />
+</p>
+</div>
+
+
+<p>
+18:46-18:52 o por ahí
+</p>
+</section>
+<section id="slide-4-6">
+<h3 id="4-6"><span class="section-number-3">4.6.</span> Podéis cambiar los datos de package.json</h3>
+<div class="org-src-container">
+
+<pre><code class="json" >{
+    "name": "Nombre del paquete node",
+    "description": "Mi juego es genial",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cleongh/MI-REPOSITORIO.git"
+    },
+    "author": "Yo &lt;mi@correo.electronico&gt;",
+    "bugs": {
+        "url": "https://github.com/cleongh/MI-REPOSITORIO/issues"
+    },
+    "homepage": "https://github.com/cleongh/MI-REPOSITORIO#readme"
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-4-7">
+<h3 id="4-7"><span class="section-number-3">4.7.</span> Abrir el proyecto en VSCode</h3>
+
+</section>
+<section id="slide-4-8">
+<h3 id="4-8"><span class="section-number-3">4.8.</span> Y pedirle nos haga un &laquo;Link to the Past&raquo;</h3>
+
+<div id="orgb2567e0" class="figure">
+<p><img src="clipboard-20261002T184359.png" alt="clipboard-20261002T184359.png" />
+</p>
+</div>
+</section>
+<section id="slide-4-9">
+<h3 id="4-9"><span class="section-number-3">4.9.</span> Y el resultado es funcional (GPT-6 Luna)</h3>
+
+<div id="org944365c" class="figure">
+<p><img src="clipboard-20261002T185612.png" alt="clipboard-20261002T185612.png" />
+</p>
+</div>
+</section>
+<section id="slide-4-10">
+<h3 id="4-10"><span class="section-number-3">4.10.</span> No es Zelda, pero</h3>
+<ul>
+<li>Funciona (teclas del cursor + espacio)</li>
+<li>3 bichos que nos persiguen y nos quitan vida</li>
+<li>Condición de victoria (coger 3 reliquias)</li>
+<li>Condición de pérdida (perder vida)</li>
+
+</ul>
+
+<p>
+<b>Ha hecho un juego funcional en unos minutos</b>  
+</p>
+</section>
+<section id="slide-4-11">
+<h3 id="4-11"><span class="section-number-3">4.11.</span> Hacer <i>commit</i> de Git</h3>
+<ul>
+<li>Es necesario tener bien configurado el cliente de Git porque <b>el agente usa línea de comandos</b></li>
+
+</ul>
+</section>
+<section id="slide-4-12">
+<h3 id="4-12"><span class="section-number-3">4.12.</span> <i>Commits</i> automáticos</h3>
+</section>
+</section>
+<section>
+<section id="slide-5">
+<h2 id="5"><span class="section-number-2">5.</span> Desarrollo en Phaser con IA (II)</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+</section>
+<section id="slide-5-1">
+<h3 id="5-1"><span class="section-number-3">5.1.</span> Vibe coding top-down y bottom-up</h3>
+</section>
+</section>
+<section>
+<section id="slide-6">
+<h2 id="6"><span class="section-number-2">6.</span> Desarrollo con IA (I)</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+</section>
+<section id="slide-6-1">
+<h3 id="6-1"><span class="section-number-3">6.1.</span> Assets en vibe coding</h3>
+</section>
+</section>
+<section>
+<section id="slide-7">
+<h2 id="7"><span class="section-number-2">7.</span> Desarrollo con IA (II)</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+</section>
+<section id="slide-7-1">
+<h3 id="7-1"><span class="section-number-3">7.1.</span> Documentación y QA con v</h3>
+</section>
+</section>
+<section>
+<section id="slide-8">
+<h2 id="8"><span class="section-number-2">8.</span> Desarrollo con IA (III)</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+</section>
+<section id="slide-8-1">
+<h3 id="8-1"><span class="section-number-3">8.1.</span> Evolución y adaptación a cambios</h3>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/plugin/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/plugin/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/plugin/search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/plugin/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: true,
+pdfSeparateFragments: true,
+overview: true,
+margin: 0.02,
+minScale: 0.20,
+maxScale: 1.20,
+
+transition: 'slide',
+transitionSpeed: 'fast',
+hash: true,
+
+// Plugins with reveal.js 4.x and later
+plugins: [ RevealNotes, RevealHighlight, RevealSearch, RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>
