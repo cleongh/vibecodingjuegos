@@ -21,6 +21,11 @@
 
 #+BEGIN_EXPORT html
 <style>
+
+.reveal .figure-number {
+    display: none;
+}
+
 section h1 .section-number-1,
 section h2 .section-number-2,
 section h3 .section-number-3,
@@ -112,6 +117,16 @@ Poder crear diseños y probar su funcionamiento sin necesidad de programar los p
 #+BEGIN_EXPORT html
 <p style="font-size: 50%; display:block; margin-top: 4em">*No lo montaremos en móvil aquí, pero se puede</small>
 #+END_EXPORT
+
+
+** "No quiero IA"
+
+- Vamos a conocer los modelos generativos y a entenderlos
+- Una formación completa hoy en día requiere que conozcáis cómo usar la IA
+- Veréis muy rápido que *no sustituyen a un equipo humano*
+- Pero hacer cosas para tirar en diseño con modelos generativos es una herramienta muy útil
+
+
 ** Cómo funciona una IA
 
 *** 
@@ -122,7 +137,7 @@ Poder crear diseños y probar su funcionamiento sin necesidad de programar los p
   - ... tú?
   - ... vosotros?
   - ... tu hermano?
-  - ... ensalada de tomate?
+  - ... /ensalada de tomate/ ?
 
 *** 
 
@@ -271,11 +286,225 @@ Solo *predice la próxima palabra más razonable*
 *** Webs con chat
 
 - [[https://chatgpt.com/][ChatGPT]]
+- [[https://claude.ai/][Claude]]
 - [[https://gemini.google.com/][Gemini]]
 - [[https://copilot.microsoft.com/][Microsoft Copilot]]
-  
+- [[https://www.perplexity.ai/][Perplexity]]
+- [[https://grok.com/][Grok]]
+- [[https://chat.mistral.ai/][Le Chat]]
+
+*** Agentes de código
+
+- [[https://github.com/google-gemini/gemini-cli][Gemini CLI]]
+- [[https://claude.ai/code][Claude Code]]
+- [[https://cursor.com/][Cursor]]
+- [[https://openai.com/codex/][Codex]]
+- [[https://github.com/features/copilot][GitHub Copilot]]
+- [[https://antigravity.google/][Google Antigravity]]
+- [[https://cline.bot/][Cline]]
+- [[https://aider.chat/][Aider]]
+- [[https://devin.ai/][Devin]]
+ 
+*** Herramientas de completado
+
+- [[https://github.com/features/copilot][GitHub Copilot]]
+- [[https://cursor.com/][Cursor]]
+- [[https://aws.amazon.com/codewhisperer/][Amazon Q Developer]]
+- [[https://developers.google.com/gemini-code-assist][Gemini Code Assist]]
+- [[https://devin.ai/desktop][Devin Desktop]]
+
+*** Modelos generativos integrados de juegos
+
+- [[https://rosebud.ai/][Rosebud AI]]
+- [[https://gdevelop.io/][GDevelop AI]]
+- [[https://replit.com/usecases/ai-game-builder][Replit Game Builder]]
+- [[https://www.summerengine.com/][Summer Engine]]
+- [[https://phaser.io/][Phaser Game Agent]]
+- [[https://create.roblox.com/docs/assistant/guide][Roblox Assistant]]
+- [[https://www.buildbox.ai/][Buildbox]]
+
+
+*** Visual Studio Code
+
+Usaremos [[https://code.visualstudio.com/][VSCode]] y su integración con agentes
+
+
+
+** Cuentas UCM para usar modelos
+
+*** 
+
+La cuenta de la UCM proporciona un cuenta da acceso a [[https://workspace.google.com/intl/es/?hl=es][Google Workspace]] y [[https://ssii.ucm.es/office-365-proplus-para-la-comunidad-universitaria-complutense][Microsoft 365]]: *tuusuario@ucm.es*
+
+
+
+#+BEGIN_EXPORT html
+<small style="display:block; margin-top:2em; color:#999;">
+La disponibilidad concreta de cada servicio puede depender de la licencia
+y de la configuración institucional
+</small>
+#+END_EXPORT
+
+
+*** Microsoft Copilot 365
+
+En [[https://portal.office.com/account][Microsoft 365 · Mi cuenta]] → ~Suscripciones~ puedes ver que tienes acceso a Copilot
+
+Un vez ahí, entra en [[https://m365.cloud.microsoft/chat/?es=SSR][Copilot 365]] (integrado con los servicios de Office 365).
+
+*** GitHub Copilot CLI
+
+Si no tienes una cuenta de GitHub, [[https://github.com/signup][créala]]
+
+Usa la dirección *tuusuario@ucm.es* para que sea de estudiante
+
+
+*** Verifica que eres estudiante
+
+Entra en:
+
+[[https://github.com/settings/education/benefits][GitHub Education · Benefits]]
+
+Pulsa en *=Start an application=*
+
+Completa la verificación como estudiante.
+
+Los estudiantes verificados obtienen acceso gratuito a
+*GitHub Copilot Student*
+
+*** Instala Copilot CLI
+
+Necesitas [[https://nodejs.org/es][Node.js]]:
+
+#+BEGIN_SRC sh
+[usuario$/]$ npm install -g @github/copilot
+#+END_SRC
+
+o, si no tienes permisos de escritura como administrador (sin =-g=):
+
+#+BEGIN_SRC sh
+  [usuario$/proyecto/]$ npm init --yes
+  [usuario$/proyecto]$ npm install @github/copilot
+#+END_SRC
+
+
+#+REVEAL: split
+
+Después:
+
+#+BEGIN_SRC sh
+[usuario$/proyecto]$ copilot
+#+END_SRC
+
+Dentro de Copilot CLI, inicia sesión:
+
+#+BEGIN_SRC text
+/login
+#+END_SRC
+
+
+*** 
+
+#+CAPTION: Copilot CLI
+#+ATTR_HTML: :width 80%
+[[file:clipboard-20261003T174213.png]]
+
+*** Gemini CLI
+
+Gemini está incluido actualmente en su licencia Google Workspace for Education de la UCM con *tuusuario@ucm.es*
+
+*** 2. Instala Gemini CLI
+
+#+BEGIN_SRC sh
+[usuario$/]$ npm install -g @google/gemini-cli
+#+END_SRC
+
+o, si no tienes permisos de escritura como administrador (sin =-g=):
+
+#+BEGIN_SRC sh
+  [usuario$/proyecto/]$ npm init --yes
+  [usuario$/proyecto]$ npm install @google/gemini-cli
+#+END_SRC
+
+Después:
+
+#+BEGIN_SRC sh
+[usuario$/proyecto/]$ gemini
+#+END_SRC
+
+*** 
+
+Cuando Gemini CLI pregunte cómo quieres autenticarte:
+
+#+BEGIN_SRC text
+1. Sign in with Google
+#+END_SRC
+
+
+Y se abrirá el navegador para completar el inicio de sesión
+
+** llamafiles
+
+Es posible ejecutar modelos de lenguaje en local (sin necesidad de usar un servicio externo)
+
+Hay varias formas, una muy sencilla es con [[https://github.com/mozilla-ai/llamafile][llamafiles]]
+
+Y hay [[https://docs.mozilla.ai/llamafile/getting-started/pre-built-llamafiles][muchos modelos]] disponiblels
+
+
+
 * Herramientas de IA (II)
-** Vibe coding
+** TODO Objetivos
+- Entender qué puede y qué no puede hacer un modelo generativo
+- Diferenciar chat, completado y agente
+- Instalar y comprobar el entorno
+- Usar control de versiones como red de seguridad
+- Publicar una primera experiencia web
+
+** TODO IA generativa, sin magia
+- Un modelo produce continuaciones probables condicionadas por contexto
+- Puede sintetizar patrones y escribir código plausible
+- No observa automáticamente el juego como lo hace una persona
+- Puede inventar APIs, omitir casos límite o “arreglar” otra cosa
+- La fluidez verbal no equivale a exactitud
+
+** TODO Tres niveles de asistencia
+- *Completado*: sugiere código mientras escribimos
+- *Chat*: conversa sobre archivos y preguntas concretas
+- *Agente*: reúne contexto, edita, ejecuta herramientas, valida e itera
+- Cuanta más autonomía damos, más importantes son límites y revisión
+
+** TODO Qué entendemos por vibe coding
+- Formular la experiencia deseada en lenguaje natural
+- Encargar pasos técnicos a una IA con acceso al proyecto
+- Evaluar continuamente una versión ejecutable
+- Corregir la dirección con evidencia, no con esperanza
+- Mantener cambios pequeños y recuperables
+
+** TODO El rol del diseñador cambia
+- De especificar pantallas a especificar *comportamientos*
+- De entregar assets a diseñar un *pipeline* de integración
+- De opinar “se siente raro” a construir una hipótesis medible
+- De esperar una implementación a explorar variantes rápidamente
+- El criterio de diseño gana valor; no lo pierde
+
+** TODO Riesgos que debemos nombrar
+- Alucinaciones de API y versiones
+- Dependencias innecesarias o vulnerables
+- Cambios masivos difíciles de revisar
+- Assets sin licencia o con estilo incoherente
+- Sesgos, contenido no deseado y datos sensibles
+- Deuda técnica invisible detrás de una demo convincente
+
+** TODO Política de seguridad del aula
+- No pegar credenciales, tokens, datos personales ni material confidencial
+- Revisar comandos antes de aprobarlos
+- Trabajar en repositorios de práctica
+- Usar /commits/ frecuentes y ramas para experimentos
+- No publicar assets sin verificar licencia y atribución
+- Si no entendemos un comando destructivo, no se ejecuta
+
+
 
 * Desarrollo en Phaser con IA (I)
 ** Vibe coding con Phaser
