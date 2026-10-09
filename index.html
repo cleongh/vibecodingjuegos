@@ -16,7 +16,7 @@
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide" class="title-slide">
-<h1>Desarrollo de prototipos con IA</h1><h3>Máster de Videojuegos UCM</h3><h4>Carlos León</h4>
+<h1>Desarrollo de prototipos con IA</h1><h3>Carlos León &lt;<a href="mailto:cleon@ucm.es">cleon@ucm.es</a>&gt;</h3><h4>Máster de Videojuegos UCM</h4>
 </section>
 <style>
 
@@ -61,19 +61,11 @@ font-size: 90%;
     color: orange;
 }
 
-.reveal .slides section:not(.title-slide) h1,
-.reveal .slides section:not(.title-slide) h2,
-.reveal .slides section:not(.title-slide) h3,
-.reveal .slides section:not(.title-slide) h4,
-.reveal .slides section:not(.title-slide) h5 {
-    font-size: 0.7em !important;
-    color: #999 !important;
-    text-align: left !important;
-}
+
 </style>
 <section>
-<section id="slide-orgabd2a44">
-<h2 id="orgabd2a44">Profesor</h2>
+<section id="slide-org61326cf">
+<h2 id="org61326cf">Profesor</h2>
 <ul>
 <li>Carlos León &lt;<a href="mailto:cleon@ucm.es">cleon@ucm.es</a>&gt;</li>
 <li>Profesor FdI</li>
@@ -86,8 +78,8 @@ font-size: 90%;
 </section>
 </section>
 <section>
-<section id="slide-org79f6b67">
-<h2 id="org79f6b67">Índice</h2>
+<section id="slide-orga6e0c60">
+<h2 id="orga6e0c60">Índice</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
 <li><a href="#/slide-1">1. Herramientas de IA (I)</a></li>
@@ -95,8 +87,6 @@ font-size: 90%;
 <li><a href="#/slide-3">3. Desarrollo en Phaser con IA (I)</a></li>
 <li><a href="#/slide-4">4. Desarrollo en Phaser con IA (II)</a></li>
 <li><a href="#/slide-5">5. Desarrollo con IA (I)</a></li>
-<li><a href="#/slide-6">6. Desarrollo con IA (II)</a></li>
-<li><a href="#/slide-7">7. Desarrollo con IA (III)</a></li>
 </ul>
 </div>
 </section>
@@ -111,7 +101,7 @@ font-size: 90%;
 <h3 id="1-1"><span class="section-number-3">1.1.</span> Objetivo de este módulo</h3>
 <div class="org-center">
 <p>
-Poder crear diseños y probar su funcionamiento sin necesidad de programar los prototipos
+Poder <b>diseñar juegos</b> y probarlos sin necesidad de programar los prototipos
 </p>
 </div>
 </section>
@@ -121,7 +111,7 @@ Poder crear diseños y probar su funcionamiento sin necesidad de programar los p
 <li>Entender cómo funciona una IA generativa de código</li>
 <li>Conocer las herramientas necesarias</li>
 <li>Aprender a hacer <i>vibe coding</i></li>
-<li>Transformar un GDD en un juego sin programar</li>
+<li>Transformar un GDD en un juego <b>sin programar</b> (aquí vamos a &laquo;sustituir&raquo; <i>al programador</i>)</li>
 <li>Pulirlo y adaptarlo hasta que represente <b>vuestra idea</b></li>
 <li>Poder jugar a vuestro juego en navegador, escritorio o móvil*</li>
 <li>Publicarlo y compartirlo fácilmente para que se pueda jugar con una URL</li>
@@ -131,7 +121,7 @@ Poder crear diseños y probar su funcionamiento sin necesidad de programar los p
 <p style="font-size: 50%; display:block; margin-top: 4em">*No lo montaremos en móvil aquí, pero se puede</small>
 </section>
 <section id="slide-1-3">
-<h3 id="1-3"><span class="section-number-3">1.3.</span> &laquo;No quiero IA&raquo;</h3>
+<h3 id="1-3"><span class="section-number-3">1.3.</span> &laquo;No quiero IA&raquo;&hellip; Hablemos</h3>
 <ul>
 <li>Vamos a conocer los modelos generativos y a entenderlos</li>
 <li>Una formación completa hoy en día requiere que conozcáis cómo usar la IA</li>
@@ -141,12 +131,22 @@ Poder crear diseños y probar su funcionamiento sin necesidad de programar los p
 </ul>
 </section>
 <section id="slide-1-4">
-<h3 id="1-4"><span class="section-number-3">1.4.</span> Cómo funciona una IA</h3>
-<div class="outline-text-3" id="text-1-4">
+<h3 id="1-4"><span class="section-number-3">1.4.</span> ¿Hasta dónde llega la IA?</h3>
+<p>
+La IA no va a hacer un buen juego de verdad
+</p>
+
+<p>
+El reto creativo ahora es mayor: <b>hacer juegos que la IA no pueda hacer</b>
+</p>
+</section>
+<section id="slide-1-5">
+<h3 id="1-5"><span class="section-number-3">1.5.</span> Cómo funciona una IA</h3>
+<div class="outline-text-3" id="text-1-5">
 </div>
 </section>
-<section id="slide-1-4-1">
-<h4 id="1-4-1"><span class="section-number-4">1.4.1.</span> </h4>
+<section id="slide-1-5-1">
+<h4 id="1-5-1"><span class="section-number-4">1.5.1.</span> </h4>
 <ul>
 <li>¡Hola! ¿Cómo estás?</li>
 <li>Muy bien, ¿y &hellip;
@@ -160,16 +160,16 @@ Poder crear diseños y probar su funcionamiento sin necesidad de programar los p
 
 </ul>
 </section>
-<section id="slide-1-4-2">
-<h4 id="1-4-2"><span class="section-number-4">1.4.2.</span> </h4>
+<section id="slide-1-5-2">
+<h4 id="1-5-2"><span class="section-number-4">1.5.2.</span> </h4>
 <div class="org-center">
 <p>
 ¿Cómo <b>predecimos</b> las siguientes palabras?
 </p>
 </div>
 </section>
-<section id="slide-1-4-3">
-<h4 id="1-4-3"><span class="section-number-4">1.4.3.</span> ¿Cómo <b>entiende</b> el lenguaje un ordenador?</h4>
+<section id="slide-1-5-3">
+<h4 id="1-5-3"><span class="section-number-4">1.5.3.</span> ¿Cómo <b>entiende</b> el lenguaje un ordenador?</h4>
 <ul>
 <li>8739874 18739874</li>
 <li>084098091 170980470  09280948098 28 9409808 &hellip;
@@ -183,51 +183,51 @@ Poder crear diseños y probar su funcionamiento sin necesidad de programar los p
 
 </ul>
 </section>
-<section id="slide-1-4-4">
-<h4 id="1-4-4"><span class="section-number-4">1.4.4.</span> </h4>
+<section id="slide-1-5-4">
+<h4 id="1-5-4"><span class="section-number-4">1.5.4.</span> </h4>
 <div class="org-center">
 <p>
 ¿Cómo puede predecir un ordenador?
 </p>
 </div>
 </section>
-<section id="slide-1-4-5">
-<h4 id="1-4-5"><span class="section-number-4">1.4.5.</span> </h4>
+<section id="slide-1-5-5">
+<h4 id="1-5-5"><span class="section-number-4">1.5.5.</span> </h4>
 
-<div id="org62fd0f1" class="figure">
+<div id="org26d1919" class="figure">
 <p><img src="2026-02-06_10-10-48_screenshot_pre.png" alt="2026-02-06_10-10-48_screenshot_pre.png" width="50%" />
 </p>
 <p><span class="figure-number">Figura 1: </span>¡Es todo <b>estadística</b>!</p>
 </div>
 </section>
-<section id="slide-1-4-6">
-<h4 id="1-4-6"><span class="section-number-4">1.4.6.</span> </h4>
+<section id="slide-1-5-6">
+<h4 id="1-5-6"><span class="section-number-4">1.5.6.</span> </h4>
 
-<div id="orgb45545a" class="figure">
+<div id="org3b6702e" class="figure">
 <p><img src="2026-02-06_10-10-48_screenshot.png" alt="2026-02-06_10-10-48_screenshot.png" width="50%" />
 </p>
 <p><span class="figure-number">Figura 2: </span>Pero le llamamos <b>aprendizaje máquina</b></p>
 </div>
 </section>
-<section id="slide-1-4-7">
-<h4 id="1-4-7"><span class="section-number-4">1.4.7.</span> </h4>
+<section id="slide-1-5-7">
+<h4 id="1-5-7"><span class="section-number-4">1.5.7.</span> </h4>
 
-<div id="orgb732af5" class="figure">
+<div id="org02a388e" class="figure">
 <p><img src="2026-02-06_10-28-58_screenshot.png" alt="2026-02-06_10-28-58_screenshot.png" width="80%" />
 </p>
 <p><span class="figure-number">Figura 3: </span>Y son modelos <b>complejos</b></p>
 </div>
 </section>
-<section id="slide-1-4-8">
-<h4 id="1-4-8"><span class="section-number-4">1.4.8.</span> El 30 de noviembre de 2022</h4>
+<section id="slide-1-5-8">
+<h4 id="1-5-8"><span class="section-number-4">1.5.8.</span> El 30 de noviembre de 2022</h4>
 <div class="org-center">
 <p>
 ¿Cómo se puede, con números, hacer ChatGPT?
 </p>
 </div>
 </section>
-<section id="slide-1-4-9">
-<h4 id="1-4-9"><span class="section-number-4">1.4.9.</span> Las ideas no son nuevas, ¿qué ha <b>cambiado</b>?</h4>
+<section id="slide-1-5-9">
+<h4 id="1-5-9"><span class="section-number-4">1.5.9.</span> Las ideas no son nuevas, ¿qué ha <b>cambiado</b>?</h4>
 <ul>
 <li class="fragment appear">Capacidad de cómputo</li>
 <li class="fragment appear">Modelos nuevos</li>
@@ -235,8 +235,8 @@ Poder crear diseños y probar su funcionamiento sin necesidad de programar los p
 
 </ul>
 </section>
-<section id="slide-1-4-10">
-<h4 id="1-4-10"><span class="section-number-4">1.4.10.</span> Gran escala</h4>
+<section id="slide-1-5-10">
+<h4 id="1-5-10"><span class="section-number-4">1.5.10.</span> Gran escala</h4>
 <ul>
 <li>Varios meses de entrenamiento</li>
 <li>Decenas de millones de dólares</li>
@@ -244,41 +244,41 @@ Poder crear diseños y probar su funcionamiento sin necesidad de programar los p
 
 </ul>
 </section>
-<section id="slide-1-4-11">
-<h4 id="1-4-11"><span class="section-number-4">1.4.11.</span> </h4>
+<section id="slide-1-5-11">
+<h4 id="1-5-11"><span class="section-number-4">1.5.11.</span> </h4>
 <div class="org-center">
 <p>
 ¿Pero por qué funciona <b>tan bien</b>?
 </p>
 </div>
 </section>
-<section id="slide-1-4-12">
-<h4 id="1-4-12"><span class="section-number-4">1.4.12.</span> </h4>
+<section id="slide-1-5-12">
+<h4 id="1-5-12"><span class="section-number-4">1.5.12.</span> </h4>
 
-<div id="orgabb5ac6" class="figure">
+<div id="org23064f5" class="figure">
 <p><img src="2026-02-06_11-01-55_screenshot.png" alt="2026-02-06_11-01-55_screenshot.png" width="30%" />
 </p>
 <p><span class="figure-number">Figura 4: </span>Arquitectura <i>Transformer</i></p>
 </div>
 </section>
-<section id="slide-1-4-13">
-<h4 id="1-4-13"><span class="section-number-4">1.4.13.</span> </h4>
+<section id="slide-1-5-13">
+<h4 id="1-5-13"><span class="section-number-4">1.5.13.</span> </h4>
 <div class="org-center">
 <p>
 Analiza <b>todas las palabras a la vez</b>, no una por una
 </p>
 </div>
 </section>
-<section id="slide-1-4-14">
-<h4 id="1-4-14"><span class="section-number-4">1.4.14.</span> </h4>
+<section id="slide-1-5-14">
+<h4 id="1-5-14"><span class="section-number-4">1.5.14.</span> </h4>
 <div class="org-center">
 <p>
 Representa las palabras como vectores de números, y lo hace analizando muchísimas frases ya escritas por personas
 </p>
 </div>
 </section>
-<section id="slide-1-4-15">
-<h4 id="1-4-15"><span class="section-number-4">1.4.15.</span> Ejemplos de encoding</h4>
+<section id="slide-1-5-15">
+<h4 id="1-5-15"><span class="section-number-4">1.5.15.</span> Ejemplos de encoding</h4>
 <div class="org-src-container">
 
 <pre><code class="python" >"El perro corre" =
@@ -289,24 +289,24 @@ Representa las palabras como vectores de números, y lo hace analizando muchísi
 </code></pre>
 </div>
 </section>
-<section id="slide-1-4-16">
-<h4 id="1-4-16"><span class="section-number-4">1.4.16.</span> Espacio latente = &laquo;mundo interno&raquo; donde la IA piensa</h4>
+<section id="slide-1-5-16">
+<h4 id="1-5-16"><span class="section-number-4">1.5.16.</span> Espacio latente = &laquo;mundo interno&raquo; donde la IA piensa</h4>
 <ul>
 <li>Cada conjunto de números es un <b>concepto</b></li>
 <li>Las palabras que solemos usar de forma relacionada están <b>cerca</b></li>
 
 </ul>
 </section>
-<section id="slide-1-4-17">
-<h4 id="1-4-17"><span class="section-number-4">1.4.17.</span> Generar</h4>
+<section id="slide-1-5-17">
+<h4 id="1-5-17"><span class="section-number-4">1.5.17.</span> Generar</h4>
 <div class="org-center">
 <p>
 Con esto, ya solo nos queda <b>predecir</b>, con estadística, la próxima palabra más probable
 </p>
 </div>
 </section>
-<section id="slide-1-4-18">
-<h4 id="1-4-18"><span class="section-number-4">1.4.18.</span> Hasta aquí</h4>
+<section id="slide-1-5-18">
+<h4 id="1-5-18"><span class="section-number-4">1.5.18.</span> Hasta aquí</h4>
 <ul>
 <li>Tenemos mucho texto escrito por humanos (Internet)</li>
 <li>Analizamos las palabras y les asignamos números cercanos si las palabras aparecen relacionadas</li>
@@ -314,8 +314,8 @@ Con esto, ya solo nos queda <b>predecir</b>, con estadística, la próxima palab
 
 </ul>
 </section>
-<section id="slide-1-4-19">
-<h4 id="1-4-19"><span class="section-number-4">1.4.19.</span> </h4>
+<section id="slide-1-5-19">
+<h4 id="1-5-19"><span class="section-number-4">1.5.19.</span> </h4>
 <div class="org-center">
 <p>
 ChatGPT no <b>sabe</b> nada <br />
@@ -335,8 +335,8 @@ Solo <b>predice la próxima palabra más razonable</b>
 </p>
 </div>
 </section>
-<section id="slide-1-4-20">
-<h4 id="1-4-20"><span class="section-number-4">1.4.20.</span> Conclusión</h4>
+<section id="slide-1-5-20">
+<h4 id="1-5-20"><span class="section-number-4">1.5.20.</span> Conclusión</h4>
 <ul>
 <li>La IA moderna no es magia, ni un modelo humano: es <b>estadística</b></li>
 <li>Usar cantidad casi infinita de <b>ejemplos</b> ha hecho posible que se parezca a lo que hacemos los humanos</li>
@@ -344,13 +344,582 @@ Solo <b>predice la próxima palabra más razonable</b>
 
 </ul>
 </section>
-<section id="slide-1-5">
-<h3 id="1-5"><span class="section-number-3">1.5.</span> Herramientas de IA para generar</h3>
-<div class="outline-text-3" id="text-1-5">
+<section id="slide-1-6">
+<h3 id="1-6"><span class="section-number-3">1.6.</span> Funcionamiento y memoria en un LLM</h3>
+<div class="outline-text-3" id="text-1-6">
 </div>
 </section>
-<section id="slide-1-5-1">
-<h4 id="1-5-1"><span class="section-number-4">1.5.1.</span> Webs con chat</h4>
+<section id="slide-1-6-1">
+<h4 id="1-6-1"><span class="section-number-4">1.6.1.</span> ¿Qué ocurre cuando hablamos con un LLM?</h4>
+<div class="org-center">
+<p>
+Prompt <br />
+↓ <br />
+Tokenización <br />
+↓ <br />
+Modelo <br />
+↓ <br />
+Predicción de tokens <br />
+↓ <br />
+Respuesta
+</p>
+</div>
+</section>
+<section id="slide-1-6-2">
+<h4 id="1-6-2"><span class="section-number-4">1.6.2.</span> El modelo no empieza de cero</h4>
+<p>
+Un LLM ya ha sido entrenado antes de que nosotros lo utilicemos
+</p>
+
+<p>
+Cuando escribimos un prompt normalmente no estamos esos parámetros (no está <i>aprendiendo</i>)
+</p>
+</section>
+<section id="slide-1-6-3">
+<h4 id="1-6-3"><span class="section-number-4">1.6.3.</span> Entonces ¿cómo parece que se acuerda?</h4>
+<p>
+Porque el modelo puede recibir como entrada parte de la conversación anterior (se le da &laquo;todo el histórico&raquo; en cada petición)
+</p>
+</section>
+<section id="slide-1-6-4">
+<h4 id="1-6-4"><span class="section-number-4">1.6.4.</span> El contexto tiene un límite</h4>
+<p>
+El modelo no puede recibir una cantidad infinita de información
+</p>
+
+<p>
+Tiene una ventana de contexto y todo lo que entra en esa ventana compite por espacio
+</p>
+
+<p>
+Cuando la conversación crece el sistema puede necesitar gestionar muchísimo contexto
+</p>
+
+<p>
+Dependiendo de la herramienta puede <b>resumir conversaciones</b> anteriores, <b>eliminar información</b> o utilizar otros mecanismos para mantener la conversación dentro de los límites (por eso puede <b>olvidar cosas</b>)
+</p>
+</section>
+<section id="slide-1-6-5">
+<h4 id="1-6-5"><span class="section-number-4">1.6.5.</span> ¿El modelo aprende cuando le corrijo?</h4>
+<p>
+No de la misma forma que cuando entrenamos (no se llama aprendizaje en este caso)
+</p>
+
+<p>
+Si decimos:
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="text" >&gt; No quiero que utilices variables globales
+</code></pre>
+</div>
+
+<p>
+el modelo puede utilizar esa información en las siguientes respuestas si sigue presente en el contexto
+</p>
+
+<p>
+Pero no estamos modificando permanentemente el modelo para que todos sus futuros usuarios sepan que no queremos Singletons
+</p>
+</section>
+<section id="slide-1-6-6">
+<h4 id="1-6-6"><span class="section-number-4">1.6.6.</span> Adaptarse no significa reentrenarse</h4>
+<p>
+Un LLM puede adaptar su respuesta al contexto:
+</p>
+
+<ul>
+<li>El tono</li>
+<li>El nivel de detalle</li>
+<li>El lenguaje</li>
+<li>Las restricciones</li>
+<li>El estilo de código</li>
+<li>Las decisiones de implementación</li>
+<li>Las prioridades</li>
+
+</ul>
+
+<p>
+Pero sus parámetros (los &laquo;números&raquo; que lo definen) no van a cambiar
+</p>
+</section>
+<section id="slide-1-6-7">
+<h4 id="1-6-7"><span class="section-number-4">1.6.7.</span> ¿Entonces el modelo &laquo;entiende&raquo;?</h4>
+<p>
+El modelo puede representar relaciones muy complejas entre conceptos, palabras, código y estructuras
+</p>
+
+<p>
+Genera texto utilizando los patrones representados en sus parámetros y el contexto disponible
+</p>
+</section>
+<section id="slide-1-6-8">
+<h4 id="1-6-8"><span class="section-number-4">1.6.8.</span> Por eso un agente de programación es diferente</h4>
+<p>
+Cuando utilizamos Copilot CLI no estamos hablando solamente con un modelo
+</p>
+
+<p>
+Estamos usando herramientas que dan datos adicionales al prompt aunque no lo veamos
+</p>
+</section>
+<section id="slide-1-6-9">
+<h4 id="1-6-9"><span class="section-number-4">1.6.9.</span> El agente puede ampliar el contexto</h4>
+<div class="org-src-container">
+
+<pre><code class="text" >&gt; Arregla el bug del inventario
+</code></pre>
+</div>
+
+<p>
+El agente puede &laquo;decidir&raquo; añadir al contexto (porque el LLM lo genera así) archivos, resultados de ejecutar herramientas, logs&hellip;
+</p>
+</section>
+<section id="slide-1-6-10">
+<h4 id="1-6-10"><span class="section-number-4">1.6.10.</span> Esto explica el vibe coding</h4>
+<p>
+Podemos describir una intención
+</p>
+
+
+
+<div class="org-src-container">
+
+<pre><code class="text" >&gt; Quiero que el enemigo persiga al jugador pero
+vuelva a su posición inicial cuando lo pierda de vista
+</code></pre>
+</div>
+
+
+
+<p>
+El agente puede llamar a herramientas (<code>ls</code>, <code>grep</code>, <code>git</code>), añadir su salida al contexto, y volver a generar y llamar otra vez a herramientas
+</p>
+</section>
+<section id="slide-1-6-11">
+<h4 id="1-6-11"><span class="section-number-4">1.6.11.</span> ¿Qué ocurre cuando empezamos un chat nuevo?</h4>
+<p>
+Empezamos <b>de 0</b>, ya no recuerda nada del contexto
+</p>
+</section>
+<section id="slide-1-6-12">
+<h4 id="1-6-12"><span class="section-number-4">1.6.12.</span> ¿Y si una herramienta tiene memoria?</h4>
+<p>
+Hay herramientas que, al iniciar una sesión de agente, meten contexto predeterminado (y parece que &laquo;te conocen mejor&raquo;), pero es solo un proceso adicional:
+</p>
+
+<ul>
+<li>Preferencias</li>
+<li>Información del proyecto</li>
+<li>Resúmenes de conversaciones</li>
+<li>Instrucciones</li>
+<li>Datos de sesiones anteriores</li>
+
+</ul>
+</section>
+<section id="slide-1-6-13">
+<h4 id="1-6-13"><span class="section-number-4">1.6.13.</span> Una buena analogía</h4>
+<ul>
+<li>El programador ya tiene conocimientos generales de programación → Lo que ya sabe el LLM (porque se ha entrenado con código también)</li>
+<li>Le damos el README y el código del proyecto → Contexto</li>
+
+</ul>
+</section>
+<section id="slide-1-6-14">
+<h4 id="1-6-14"><span class="section-number-4">1.6.14.</span> Por eso el contexto es una herramienta</h4>
+<p>
+Un buen vibe coder no solo sabe escribir prompts, sabe decidir qué información necesita el modelo (<i>archivos</i>, <i>restricciones</i>, <i>errores</i>, <i>resultados</i>&hellip;)
+</p>
+
+<div class="org-center">
+<p>
+Poner <b>de más</b> puede llevar al modelo a alucinar o sobregeneralizar, poner <b>de menos</b> puede hacer que falte información relevante
+</p>
+</div>
+</section>
+<section id="slide-1-7">
+<h3 id="1-7"><span class="section-number-3">1.7.</span> System prompt, usuario y contexto</h3>
+<p>
+El <i>system prompt</i> contiene instrucciones que establecen el comportamiento general del modelo para esa interacción
+</p>
+
+<ul>
+<li>Qué papel debe desempeñar</li>
+<li>Qué tipo de respuestas debe producir</li>
+<li>Qué reglas debe seguir</li>
+<li>Qué herramientas puede utilizar</li>
+<li>Qué restricciones tiene</li>
+<li>Qué formato debe utilizar</li>
+<li>Qué debe evitar</li>
+
+</ul>
+</section>
+<section id="slide-1-7-1">
+<h4 id="1-7-1"><span class="section-number-4">1.7.1.</span> Simplificación: sistema + usuario</h4>
+<ul>
+<li><code>SYSTEM</code>: Cómo debe comportarse. En el bajo nivel, tiene unos tokens ocultos que le dan peso sobre la respuesta (por cómo está entrenado)</li>
+<li><code>USER</code>: Qué queremos conseguir (nuestro prompt en cada iteración)</li>
+
+</ul>
+
+<p>
+(En un agente real normalmente hay muchas más piezas)
+</p>
+</section>
+<section id="slide-1-7-2">
+<h4 id="1-7-2"><span class="section-number-4">1.7.2.</span> El contexto</h4>
+<p>
+El contexto es toda la información disponible para generar una respuesta:
+</p>
+
+<ul>
+<li>System prompt</li>
+<li>Instrucciones de la aplicación</li>
+<li>Mensaje del usuario (<i>user prompt</i>)</li>
+<li>Mensajes anteriores</li>
+<li>Respuestas anteriores</li>
+<li>Código</li>
+<li>Documentación</li>
+<li>Resultados de comandos</li>
+<li>&hellip;</li>
+
+</ul>
+</section>
+<section id="slide-1-7-3">
+<h4 id="1-7-3"><span class="section-number-4">1.7.3.</span> El prompt no existe aislado</h4>
+<p>
+Meh&hellip;
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="text" >&gt; Hazlo más rápido
+</code></pre>
+</div>
+
+<p>
+Mejor:
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="text" >&gt; Estamos haciendo un juego 2D en Godot
+El enemigo tiene actualmente 200 agentes
+El cálculo de pathfinding ocurre cada frame
+Hazlo más rápido
+</code></pre>
+</div>
+</section>
+<section id="slide-1-7-4">
+<h4 id="1-7-4"><span class="section-number-4">1.7.4.</span> El contexto puede crecer muy rápido</h4>
+<p>
+Una tarea puede producir muchísima información (pregunta + sistema + tools + output&hellip;)
+</p>
+
+<p>
+Cada vuelta puede añadir información
+</p>
+</section>
+<section id="slide-1-7-5">
+<h4 id="1-7-5"><span class="section-number-4">1.7.5.</span> Los modelos tienen una ventana de contexto limitada</h4>
+<p>
+No podemos proporcionar indefinidamente:
+</p>
+
+<ul>
+<li>Código</li>
+<li>Historial</li>
+<li>Logs</li>
+<li>Documentación</li>
+<li>Resultados de herramientas</li>
+<li>Respuestas anteriores</li>
+
+</ul>
+</section>
+<section id="slide-1-7-6">
+<h4 id="1-7-6"><span class="section-number-4">1.7.6.</span> La ventana de contexto</h4>
+<p>
+Podemos imaginarla como una caja con capacidad limitada
+</p>
+
+<p>
+Todo lo que queremos que el modelo tenga disponible debe caber dentro de esa ventana
+</p>
+</section>
+<section id="slide-1-7-7">
+<h4 id="1-7-7"><span class="section-number-4">1.7.7.</span> ¿Qué ocurre cuando se llena?</h4>
+<p>
+El sistema necesita gestionar el contexto
+</p>
+
+<p>
+Dependiendo de la herramienta puede
+</p>
+
+<ul>
+<li>Eliminar información antigua</li>
+<li>Resumir mensajes anteriores</li>
+<li>Recuperar información relevante</li>
+<li>Mantener instrucciones importantes</li>
+<li>Crear un nuevo contexto</li>
+<li><b>Compactar</b> la conversación</li>
+
+</ul>
+</section>
+<section id="slide-1-7-8">
+<h4 id="1-7-8"><span class="section-number-4">1.7.8.</span> Compactar no es recordar perfectamente</h4>
+<p>
+El resumen es una representación de la conversación anterior que no necesariamente contiene cada detalle
+</p>
+
+
+<p>
+El objetivo es conservar suficiente información para continuar la tarea
+</p>
+</section>
+<section id="slide-1-7-9">
+<h4 id="1-7-9"><span class="section-number-4">1.7.9.</span> El problema de los logs</h4>
+<p>
+Los logs son especialmente peligrosos para el contexto
+</p>
+
+<p>
+Podemos hacer:
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="text" >[agente]$ npm install
+</code></pre>
+</div>
+
+<p>
+y obtener cientos o miles de líneas
+</p>
+
+
+</section>
+<section>
+
+<p>
+Pero quizá solo necesitamos
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="text" >ERROR: package X requires Node 22
+</code></pre>
+</div>
+
+<p>
+Meter todo el log en el contexto puede consumir espacio sin aportar información útil
+</p>
+</section>
+<section id="slide-1-7-10">
+<h4 id="1-7-10"><span class="section-number-4">1.7.10.</span> Una buena sesión de agente</h4>
+<p>
+Podemos estructurarla
+</p>
+
+<ol>
+<li>Definir objetivo</li>
+<li>Dar restricciones</li>
+<li>Investigar código relevante</li>
+<li>Implementar</li>
+<li>Probar</li>
+<li>Corregir</li>
+<li>Validar</li>
+
+</ol>
+
+<p>
+Cada etapa debería aportar información útil al contexto
+</p>
+</section>
+<section id="slide-1-7-11">
+<h4 id="1-7-11"><span class="section-number-4">1.7.11.</span> Cuándo empezar una sesión nueva</h4>
+<p>
+Puede tener sentido empezar de nuevo cuando
+</p>
+
+<ul>
+<li>Hemos cambiado completamente de tarea</li>
+<li>El contexto contiene demasiado ruido</li>
+<li>El agente ha tomado una dirección equivocada</li>
+<li>Hay demasiados intentos fallidos</li>
+<li>La conversación se ha vuelto difícil de seguir</li>
+<li>Queremos proporcionar un contexto más limpio</li>
+
+</ul>
+</section>
+<section id="slide-1-7-12">
+<h4 id="1-7-12"><span class="section-number-4">1.7.12.</span> Pero empezar de nuevo tiene un coste</h4>
+<p>
+Una sesión nueva no conoce automáticamente todas las decisiones anteriores
+</p>
+
+</section>
+<section>
+
+<p>
+Por eso podemos preparar un resumen
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="text" >OBJETIVO
+ESTADO ACTUAL
+DECISIONES
+RESTRICCIONES
+ARCHIVOS IMPORTANTES
+PROBLEMAS CONOCIDOS
+PRÓXIMO PASO
+</code></pre>
+</div>
+
+<p>
+Y utilizarlo como contexto inicial
+</p>
+</section>
+<section id="slide-1-7-13">
+<h4 id="1-7-13"><span class="section-number-4">1.7.13.</span> Contexto limpio vs contexto enorme</h4>
+
+</section>
+<section id="slide-1-7-14">
+<h4 id="1-7-14"><span class="section-number-4">1.7.14.</span> El código puede ser memoria</h4>
+<p>
+Una de las mejores formas de conservar decisiones técnicas es escribirlas en el propio proyecto
+</p>
+
+<p>
+Por ejemplo
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="text" >ARCHITECTURE.md
+
+- El inventario utiliza InventoryComponent
+- No utilizamos Singleton
+- Los objetos implementan IItem
+- El inventario tiene 20 huecos
+</code></pre>
+</div>
+</section>
+<section id="slide-1-7-15">
+<h4 id="1-7-15"><span class="section-number-4">1.7.15.</span> Instrucciones persistentes</h4>
+<p>
+Algunas herramientas permiten definir instrucciones específicas para un proyecto
+</p>
+
+<ul>
+<li>Convenciones de código</li>
+<li>Arquitectura</li>
+<li>Comandos</li>
+<li>Restricciones</li>
+<li>Estilo</li>
+<li>Reglas del proyecto</li>
+
+</ul>
+</section>
+<section id="slide-1-7-16">
+<h4 id="1-7-16"><span class="section-number-4">1.7.16.</span> La memoria ideal para un proyecto</h4>
+<p>
+Podemos imaginar varias capas
+</p>
+
+
+<div class="org-center">
+<p>
+ REGLAS DEL PROYECTO <br />
+         ↓ <br />
+   DOCUMENTACIÓN <br />
+         ↓ <br />
+      CÓDIGO <br />
+         ↓ <br />
+CONTEXTO DE LA SESIÓN <br />
+         ↓ <br />
+   PROMPT ACTUAL
+</p>
+</div>
+
+
+<p>
+Cada capa aporta información diferente
+</p>
+</section>
+<section id="slide-1-7-17">
+<h4 id="1-7-17"><span class="section-number-4">1.7.17.</span> ¿Qué debería ir en cada capa?</h4>
+<p>
+Es positivo usar Markdown:
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="markdown" ># REGLAS
+
+"Usamos C#"
+"No usamos Singleton"
+
+
+# DOCUMENTACIÓN
+
+"El sistema de inventario funciona así"
+
+
+# CÓDIGO
+
+Implementación real
+
+
+# SESIÓN
+
+"Ahora estamos arreglando RemoveItem()"
+
+
+# PROMPT
+
+"Corrige este error"
+</code></pre>
+</div>
+</section>
+<section id="slide-1-7-18">
+<h4 id="1-7-18"><span class="section-number-4">1.7.18.</span> Contexto y coste</h4>
+<p>
+Más tokens de entrada pueden significar
+</p>
+
+<ul>
+<li>Más procesamiento</li>
+<li>Mayor consumo</li>
+<li>Mayor coste en sistemas basados en tokens</li>
+<li>Menos espacio disponible para la respuesta</li>
+
+</ul>
+
+<p>
+Por eso gestionar el contexto es también una cuestión de eficiencia
+</p>
+</section>
+<section id="slide-1-7-19">
+<h4 id="1-7-19"><span class="section-number-4">1.7.19.</span> Para vibe coding</h4>
+<ul>
+<li>Compactar (<code>/compact</code>)</li>
+<li>Empezar una sesión nueva</li>
+<li>Recuperar documentación</li>
+<li>Reducir el contexto</li>
+<li>Dar de nuevo las restricciones importantes</li>
+
+</ul>
+</section>
+<section id="slide-1-8">
+<h3 id="1-8"><span class="section-number-3">1.8.</span> Herramientas de IA para generar</h3>
+<div class="outline-text-3" id="text-1-8">
+</div>
+</section>
+<section id="slide-1-8-1">
+<h4 id="1-8-1"><span class="section-number-4">1.8.1.</span> Webs con chat</h4>
 <ul>
 <li><a href="https://chatgpt.com/">ChatGPT</a></li>
 <li><a href="https://claude.ai/">Claude</a></li>
@@ -362,10 +931,9 @@ Solo <b>predice la próxima palabra más razonable</b>
 
 </ul>
 </section>
-<section id="slide-1-5-2">
-<h4 id="1-5-2"><span class="section-number-4">1.5.2.</span> Agentes de código</h4>
+<section id="slide-1-8-2">
+<h4 id="1-8-2"><span class="section-number-4">1.8.2.</span> Agentes de código</h4>
 <ul>
-<li><a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a></li>
 <li><a href="https://claude.ai/code">Claude Code</a></li>
 <li><a href="https://cursor.com/">Cursor</a></li>
 <li><a href="https://openai.com/codex/">Codex</a></li>
@@ -377,8 +945,8 @@ Solo <b>predice la próxima palabra más razonable</b>
 
 </ul>
 </section>
-<section id="slide-1-5-3">
-<h4 id="1-5-3"><span class="section-number-4">1.5.3.</span> Herramientas de completado</h4>
+<section id="slide-1-8-3">
+<h4 id="1-8-3"><span class="section-number-4">1.8.3.</span> Herramientas de completado</h4>
 <ul>
 <li><a href="https://github.com/features/copilot">GitHub Copilot</a></li>
 <li><a href="https://cursor.com/">Cursor</a></li>
@@ -388,9 +956,10 @@ Solo <b>predice la próxima palabra más razonable</b>
 
 </ul>
 </section>
-<section id="slide-1-5-4">
-<h4 id="1-5-4"><span class="section-number-4">1.5.4.</span> Modelos generativos integrados de juegos</h4>
+<section id="slide-1-8-4">
+<h4 id="1-8-4"><span class="section-number-4">1.8.4.</span> Modelos generativos integrados de juegos</h4>
 <ul>
+<li><a href="https://labs.google/playground">Google Playground</a></li>
 <li><a href="https://rosebud.ai/">Rosebud AI</a></li>
 <li><a href="https://gdevelop.io/">GDevelop AI</a></li>
 <li><a href="https://replit.com/usecases/ai-game-builder">Replit Game Builder</a></li>
@@ -401,19 +970,41 @@ Solo <b>predice la próxima palabra más razonable</b>
 
 </ul>
 </section>
-<section id="slide-1-5-5">
-<h4 id="1-5-5"><span class="section-number-4">1.5.5.</span> Visual Studio Code</h4>
+<section id="slide-1-8-5">
+<h4 id="1-8-5"><span class="section-number-4">1.8.5.</span> Visual Studio Code</h4>
 <p>
 Usaremos <a href="https://code.visualstudio.com/">VSCode</a> y su integración con agentes
 </p>
+
+<ul>
+<li>Las últimas versiones vienen con Copilot ya integrado (con la cuenta de GitHub student lo tenéis)</li>
+<li>Antes se podía usar Gemini instalando su extensión:</li>
+
+</ul>
+
+
+<div id="org6ef2d6f" class="figure">
+<p><img src="clipboard-20261005T091436.png" alt="clipboard-20261005T091436.png" />
+</p>
+</div>
+
+
+<div id="orgaf200b5" class="figure">
+<p><img src="clipboard-20261005T105513.png" alt="clipboard-20261005T105513.png" />
+</p>
+</div>
+
+<p>
+(pero ahora hay que usar <a href="https://antigravity.google/">Antigravity</a> )
+</p>
 </section>
-<section id="slide-1-6">
-<h3 id="1-6"><span class="section-number-3">1.6.</span> Cuentas UCM para usar modelos</h3>
-<div class="outline-text-3" id="text-1-6">
+<section id="slide-1-9">
+<h3 id="1-9"><span class="section-number-3">1.9.</span> Cuentas UCM para usar modelos</h3>
+<div class="outline-text-3" id="text-1-9">
 </div>
 </section>
-<section id="slide-1-6-1">
-<h4 id="1-6-1"><span class="section-number-4">1.6.1.</span> </h4>
+<section id="slide-1-9-1">
+<h4 id="1-9-1"><span class="section-number-4">1.9.1.</span> </h4>
 <p>
 La cuenta de la UCM proporciona un cuenta da acceso a <a href="https://workspace.google.com/intl/es/?hl=es">Google Workspace</a> y <a href="https://ssii.ucm.es/office-365-proplus-para-la-comunidad-universitaria-complutense">Microsoft 365</a>: <b>tuusuario@ucm.es</b>
 </p>
@@ -425,8 +1016,8 @@ La disponibilidad concreta de cada servicio puede depender de la licencia
 y de la configuración institucional
 </small>
 </section>
-<section id="slide-1-6-2">
-<h4 id="1-6-2"><span class="section-number-4">1.6.2.</span> Microsoft Copilot 365</h4>
+<section id="slide-1-9-2">
+<h4 id="1-9-2"><span class="section-number-4">1.9.2.</span> Microsoft Copilot 365</h4>
 <p>
 En <a href="https://portal.office.com/account">Microsoft 365 · Mi cuenta</a> → <code>Suscripciones</code> puedes ver que tienes acceso a Copilot
 </p>
@@ -435,8 +1026,8 @@ En <a href="https://portal.office.com/account">Microsoft 365 · Mi cuenta</a> �
 Un vez ahí, entra en <a href="https://m365.cloud.microsoft/chat/?es=SSR">Copilot 365</a> (integrado con los servicios de Office 365).
 </p>
 </section>
-<section id="slide-1-6-3">
-<h4 id="1-6-3"><span class="section-number-4">1.6.3.</span> GitHub Copilot CLI</h4>
+<section id="slide-1-9-3">
+<h4 id="1-9-3"><span class="section-number-4">1.9.3.</span> GitHub Copilot CLI</h4>
 <p>
 Si no tienes una cuenta de GitHub, <a href="https://github.com/signup">créala</a>
 </p>
@@ -445,8 +1036,8 @@ Si no tienes una cuenta de GitHub, <a href="https://github.com/signup">créala</
 Usa la dirección <b>tuusuario@ucm.es</b> para que sea de estudiante
 </p>
 </section>
-<section id="slide-1-6-4">
-<h4 id="1-6-4"><span class="section-number-4">1.6.4.</span> Verifica que eres estudiante</h4>
+<section id="slide-1-9-4">
+<h4 id="1-9-4"><span class="section-number-4">1.9.4.</span> Verifica que eres estudiante</h4>
 <p>
 Entra en:
 </p>
@@ -468,8 +1059,8 @@ Los estudiantes verificados obtienen acceso gratuito a
 <b>GitHub Copilot Student</b>
 </p>
 </section>
-<section id="slide-1-6-5">
-<h4 id="1-6-5"><span class="section-number-4">1.6.5.</span> Instala Copilot CLI</h4>
+<section id="slide-1-9-5">
+<h4 id="1-9-5"><span class="section-number-4">1.9.5.</span> Instala Copilot CLI</h4>
 <p>
 Necesitas <a href="https://nodejs.org/es">Node.js</a>:
 </p>
@@ -515,23 +1106,49 @@ Dentro de Copilot CLI, inicia sesión:
 </code></pre>
 </div>
 </section>
-<section id="slide-1-6-6">
-<h4 id="1-6-6"><span class="section-number-4">1.6.6.</span> </h4>
+<section id="slide-1-9-6">
+<h4 id="1-9-6"><span class="section-number-4">1.9.6.</span> </h4>
 
-<div id="org79803fb" class="figure">
+<div id="org518ccaa" class="figure">
 <p><img src="clipboard-20261003T174213.png" alt="clipboard-20261003T174213.png" width="80%" />
 </p>
 <p><span class="figure-number">Figura 5: </span>Copilot CLI</p>
 </div>
 </section>
-<section id="slide-1-6-7">
-<h4 id="1-6-7"><span class="section-number-4">1.6.7.</span> Gemini CLI</h4>
+<section id="slide-1-9-7">
+<h4 id="1-9-7"><span class="section-number-4">1.9.7.</span> Google Antigravity</h4>
+<p>
+Para usar los modelos de Google, hay que usar <a href="https://antigravity.google/">Google Antigravity</a>
+</p>
+
+<p>
+Hay que:
+</p>
+
+<ol>
+<li>Bajarlo</li>
+<li>Usar una cuenta personal (la UCM aún no da permisos)</li>
+
+</ol>
+</section>
+<section id="slide-1-9-8">
+<h4 id="1-9-8"><span class="section-number-4">1.9.8.</span> </h4>
+<p>
+Por dentro, Antigravity tiene el mismo editor que VSCode 
+</p>
+</section>
+<section id="slide-1-9-9">
+<h4 id="1-9-9"><span class="section-number-4">1.9.9.</span> Gemini CLI</h4>
 <p>
 Gemini está incluido actualmente en su licencia Google Workspace for Education de la UCM con <b>tuusuario@ucm.es</b>
 </p>
+
+<p>
+<b>Pero hay que crear un proyecto de Google</b>
+</p>
 </section>
-<section id="slide-1-6-8">
-<h4 id="1-6-8"><span class="section-number-4">1.6.8.</span> 2. Instala Gemini CLI</h4>
+<section id="slide-1-9-10">
+<h4 id="1-9-10"><span class="section-number-4">1.9.10.</span> 2. Instala Gemini CLI</h4>
 <div class="org-src-container">
 
 <pre><code class="sh" >[usuario$/]$ npm install -g @google/gemini-cli
@@ -559,25 +1176,59 @@ Después:
 </code></pre>
 </div>
 </section>
-<section id="slide-1-6-9">
-<h4 id="1-6-9"><span class="section-number-4">1.6.9.</span> </h4>
+<section id="slide-1-9-11">
+<h4 id="1-9-11"><span class="section-number-4">1.9.11.</span> </h4>
 <p>
-Cuando Gemini CLI pregunte cómo quieres autenticarte:
+Cuando Gemini CLI pregunte cómo quieres autenticarte (<code>1. Sign in with Google</code> no funciona ya):
 </p>
 
 <div class="org-src-container">
 
-<pre><code class="text" >1. Sign in with Google
+<pre><code class="text" >2. Use Gemini API Key
 </code></pre>
 </div>
 
 
 <p>
-Y se abrirá el navegador para completar el inicio de sesión
+Y se abrirá el navegador para completar el inicio de sesión, crear el proyecto y darnos una clave API
 </p>
 </section>
-<section id="slide-1-7">
-<h3 id="1-7"><span class="section-number-3">1.7.</span> llamafiles</h3>
+<section id="slide-1-9-12">
+<h4 id="1-9-12"><span class="section-number-4">1.9.12.</span> Devin</h4>
+<p>
+<a href="https://devin.ai/">https://devin.ai/</a>
+</p>
+</section>
+<section id="slide-1-9-13">
+<h4 id="1-9-13"><span class="section-number-4">1.9.13.</span> <span class="todo NEXT">NEXT</span> Google AI Studio</h4>
+<p>
+<a href="https://aistudio.google.com/">https://aistudio.google.com/</a>
+</p>
+</section>
+<section id="slide-1-9-14">
+<h4 id="1-9-14"><span class="section-number-4">1.9.14.</span> ¿Qué modelo uso?</h4>
+<ul>
+<li><b>TODOS</b></li>
+<li>Es posible mezclarlos, sacar lo mejor de cada uno</li>
+<li>Lo mejor para prototipar es usar los modelos más fuertes (y más &laquo;caros&raquo;) primero para que la base de código sea robusta y hacer que modelos más baratos retoquen cosas</li>
+
+</ul>
+</section>
+<section id="slide-1-10">
+<h3 id="1-10"><span class="section-number-3">1.10.</span> Tokens, cuotas y costes</h3>
+<p>
+<a href="https://aistudio.google.com/rate-limit">https://aistudio.google.com/rate-limit</a>
+</p>
+
+
+<div id="org99bf207" class="figure">
+<p><img src="clipboard-20261005T134041.png" alt="clipboard-20261005T134041.png" width="50%" />
+</p>
+<p><span class="figure-number">Figura 6: </span>Gestión de tokens en AI Studio de Google</p>
+</div>
+</section>
+<section id="slide-1-11">
+<h3 id="1-11"><span class="section-number-3">1.11.</span> llamafiles</h3>
 <p>
 Es posible ejecutar modelos de lenguaje en local (sin necesidad de usar un servicio externo)
 </p>
@@ -587,263 +1238,48 @@ Hay varias formas, una muy sencilla es con <a href="https://github.com/mozilla-a
 </p>
 
 <p>
-Y hay <a href="https://docs.mozilla.ai/llamafile/getting-started/pre-built-llamafiles">muchos modelos</a> disponiblels
+Y hay <a href="https://docs.mozilla.ai/llamafile/getting-started/pre-built-llamafiles">muchos modelos</a> disponibles
 </p>
+</section>
+<section id="slide-1-12">
+<h3 id="1-12"><span class="section-number-3">1.12.</span> Tareas</h3>
+<div class="org-center">
+<p>
+Generar una aventura conversacional tipo Zork (con Gemini Antigravity, por ejemplo) sin tocar código
+</p>
+</div>
+
+</section>
+<section>
+
+<ul>
+<li>Asegurarse de tener Node.js y un modelo (Copilot, Gemini&hellip;)</li>
+<li>Pedirle al modelo desde terminal que nos genere una aventura gráfica en modo texto en JavaScript y Node.js</li>
+<li>No vamos a &laquo;generar → salir → ejecutar → repetir&raquo;, sino que vamos a hacerlo todo desde línea de comandos, incluso <i>ejecutar</i> el juego</li>
+<li>Cuidado con los tokens, los costes, el modelo que usamos&hellip;</li>
+<li>Vamos generando versiones, comprobando código, revisando&hellip; un <i>diálogo</i> con el sistema</li>
+
+</ul>
 </section>
 </section>
 <section>
 <section id="slide-2">
 <h2 id="2"><span class="section-number-2">2.</span> Herramientas de IA (II)</h2>
-<div class="outline-text-2" id="text-2">
-</div>
-</section>
-<section id="slide-2-1">
-<h3 id="2-1"><span class="section-number-3">2.1.</span> <span class="todo TODO">TODO</span> Objetivos</h3>
-<ul>
-<li>Entender qué puede y qué no puede hacer un modelo generativo</li>
-<li>Diferenciar chat, completado y agente</li>
-<li>Instalar y comprobar el entorno</li>
-<li>Usar control de versiones como red de seguridad</li>
-<li>Publicar una primera experiencia web</li>
-
-</ul>
-</section>
-<section id="slide-2-2">
-<h3 id="2-2"><span class="section-number-3">2.2.</span> <span class="todo TODO">TODO</span> IA generativa, sin magia</h3>
-<ul>
-<li>Un modelo produce continuaciones probables condicionadas por contexto</li>
-<li>Puede sintetizar patrones y escribir código plausible</li>
-<li>No observa automáticamente el juego como lo hace una persona</li>
-<li>Puede inventar APIs, omitir casos límite o “arreglar” otra cosa</li>
-<li>La fluidez verbal no equivale a exactitud</li>
-
-</ul>
-</section>
-<section id="slide-2-3">
-<h3 id="2-3"><span class="section-number-3">2.3.</span> <span class="todo TODO">TODO</span> Tres niveles de asistencia</h3>
-<ul>
-<li><b>Completado</b>: sugiere código mientras escribimos</li>
-<li><b>Chat</b>: conversa sobre archivos y preguntas concretas</li>
-<li><b>Agente</b>: reúne contexto, edita, ejecuta herramientas, valida e itera</li>
-<li>Cuanta más autonomía damos, más importantes son límites y revisión</li>
-
-</ul>
-</section>
-<section id="slide-2-4">
-<h3 id="2-4"><span class="section-number-3">2.4.</span> <span class="todo TODO">TODO</span> Qué entendemos por vibe coding</h3>
-<ul>
-<li>Formular la experiencia deseada en lenguaje natural</li>
-<li>Encargar pasos técnicos a una IA con acceso al proyecto</li>
-<li>Evaluar continuamente una versión ejecutable</li>
-<li>Corregir la dirección con evidencia, no con esperanza</li>
-<li>Mantener cambios pequeños y recuperables</li>
-
-</ul>
-</section>
-<section id="slide-2-5">
-<h3 id="2-5"><span class="section-number-3">2.5.</span> <span class="todo TODO">TODO</span> El rol del diseñador cambia</h3>
-<ul>
-<li>De especificar pantallas a especificar <b>comportamientos</b></li>
-<li>De entregar assets a diseñar un <b>pipeline</b> de integración</li>
-<li>De opinar “se siente raro” a construir una hipótesis medible</li>
-<li>De esperar una implementación a explorar variantes rápidamente</li>
-<li>El criterio de diseño gana valor; no lo pierde</li>
-
-</ul>
-</section>
-<section id="slide-2-6">
-<h3 id="2-6"><span class="section-number-3">2.6.</span> <span class="todo TODO">TODO</span> Riesgos que debemos nombrar</h3>
-<ul>
-<li>Alucinaciones de API y versiones</li>
-<li>Dependencias innecesarias o vulnerables</li>
-<li>Cambios masivos difíciles de revisar</li>
-<li>Assets sin licencia o con estilo incoherente</li>
-<li>Sesgos, contenido no deseado y datos sensibles</li>
-<li>Deuda técnica invisible detrás de una demo convincente</li>
-
-</ul>
-</section>
-<section id="slide-2-7">
-<h3 id="2-7"><span class="section-number-3">2.7.</span> <span class="todo TODO">TODO</span> Política de seguridad del aula</h3>
-<ul>
-<li>No pegar credenciales, tokens, datos personales ni material confidencial</li>
-<li>Revisar comandos antes de aprobarlos</li>
-<li>Trabajar en repositorios de práctica</li>
-<li>Usar <i>commits</i> frecuentes y ramas para experimentos</li>
-<li>No publicar assets sin verificar licencia y atribución</li>
-<li>Si no entendemos un comando destructivo, no se ejecuta</li>
-
-</ul>
 </section>
 </section>
 <section>
 <section id="slide-3">
 <h2 id="3"><span class="section-number-2">3.</span> Desarrollo en Phaser con IA (I)</h2>
-<div class="outline-text-2" id="text-3">
-</div>
-</section>
-<section id="slide-3-1">
-<h3 id="3-1"><span class="section-number-3">3.1.</span> Vibe coding con Phaser</h3>
-<div class="outline-text-3" id="text-3-1">
-</div>
-</section>
-<section id="slide-3-1-1">
-<h4 id="3-1-1"><span class="section-number-4">3.1.1.</span> Versiones de Phaser</h4>
-<ul>
-<li>Es muy posible que el LLM tenga mucho contenido de versiones anteriores de Phaser (v2 y v3)</li>
-<li>Hay que saber identificar los problemas de API y corregir al modelo</li>
-
-</ul>
-</section>
-<section id="slide-3-2">
-<h3 id="3-2"><span class="section-number-3">3.2.</span> Simulación</h3>
-<ul>
-<li>Tener una cuenta en GitHub</li>
-<li>En GitHub, ir al repositorio de la <a href="https://github.com/cleongh/plantillaphaser">plantilla de Phaser</a></li>
-<li>Pinchar en  <img src="clipboard-20261002T132319.png" alt="clipboard-20261002T132319.png" />  → <code>Create new repository</code></li>
-
-</ul>
-
-</section>
-<section>
-
-<ul>
-<li>Creará un repositorio nuevo con una copia de la plantilla</li>
-<li>Bajamos el repositorio con <a href="https://github.com/apps/desktop">GitHub Desktop</a> (recomendado), Tortoise o línea de comandos:</li>
-
-</ul>
-
-<div class="org-src-container">
-
-<pre><code class="bash" ># Atención a poner la URL de SSH si queremos hacer `push' después
-
-# Ejemplo:
-&lt;cleon@fdi.ucm.es ~&gt;$ git clone git@github.com:cleongh/mvjvibecoding.git
-</code></pre>
-</div>
-</section>
-<section id="slide-3-3">
-<h3 id="3-3"><span class="section-number-3">3.3.</span> </h3>
-
-<div id="org1d9b8ee" class="figure">
-<p><img src="clipboard-20261002T133141.png" alt="clipboard-20261002T133141.png" />
-</p>
-</div>
-</section>
-<section id="slide-3-4">
-<h3 id="3-4"><span class="section-number-3">3.4.</span> </h3>
-</section>
-<section id="slide-3-5">
-<h3 id="3-5"><span class="section-number-3">3.5.</span> </h3>
-
-<div id="orgfe7e438" class="figure">
-<p><img src="clipboard-20261002T183533.png" alt="clipboard-20261002T183533.png" />
-</p>
-</div>
-</section>
-<section id="slide-3-6">
-<h3 id="3-6"><span class="section-number-3">3.6.</span> Podéis cambiar los datos de package.json</h3>
-<div class="org-src-container">
-
-<pre><code class="json" >{
-    "name": "Nombre del paquete node",
-    "description": "Mi juego es genial",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/cleongh/MI-REPOSITORIO.git"
-    },
-    "author": "Yo &lt;mi@correo.electronico&gt;",
-    "bugs": {
-        "url": "https://github.com/cleongh/MI-REPOSITORIO/issues"
-    },
-    "homepage": "https://github.com/cleongh/MI-REPOSITORIO#readme"
-}
-</code></pre>
-</div>
-</section>
-<section id="slide-3-7">
-<h3 id="3-7"><span class="section-number-3">3.7.</span> Abrir el proyecto en VSCode</h3>
-
-</section>
-<section id="slide-3-8">
-<h3 id="3-8"><span class="section-number-3">3.8.</span> Y pedirle nos haga un &laquo;Link to the Past&raquo;</h3>
-
-<div id="org7f63ce6" class="figure">
-<p><img src="clipboard-20261002T184359.png" alt="clipboard-20261002T184359.png" />
-</p>
-</div>
-</section>
-<section id="slide-3-9">
-<h3 id="3-9"><span class="section-number-3">3.9.</span> Y el resultado es funcional (GPT-6 Luna)</h3>
-
-<div id="org9ff83f9" class="figure">
-<p><img src="clipboard-20261002T185612.png" alt="clipboard-20261002T185612.png" />
-</p>
-</div>
-</section>
-<section id="slide-3-10">
-<h3 id="3-10"><span class="section-number-3">3.10.</span> No es Zelda, pero</h3>
-<ul>
-<li>Funciona (teclas del cursor + espacio)</li>
-<li>3 bichos que nos persiguen y nos quitan vida</li>
-<li>Condición de victoria (coger 3 reliquias)</li>
-<li>Condición de pérdida (perder vida)</li>
-
-</ul>
-
-<p>
-<b>Ha hecho un juego funcional en unos minutos</b>  
-</p>
-</section>
-<section id="slide-3-11">
-<h3 id="3-11"><span class="section-number-3">3.11.</span> Hacer <i>commit</i> de Git</h3>
-<ul>
-<li>Es necesario tener bien configurado el cliente de Git porque <b>el agente usa línea de comandos</b></li>
-
-</ul>
-</section>
-<section id="slide-3-12">
-<h3 id="3-12"><span class="section-number-3">3.12.</span> <i>Commits</i> automáticos</h3>
 </section>
 </section>
 <section>
 <section id="slide-4">
 <h2 id="4"><span class="section-number-2">4.</span> Desarrollo en Phaser con IA (II)</h2>
-<div class="outline-text-2" id="text-4">
-</div>
-</section>
-<section id="slide-4-1">
-<h3 id="4-1"><span class="section-number-3">4.1.</span> Vibe coding top-down y bottom-up</h3>
 </section>
 </section>
 <section>
 <section id="slide-5">
 <h2 id="5"><span class="section-number-2">5.</span> Desarrollo con IA (I)</h2>
-<div class="outline-text-2" id="text-5">
-</div>
-</section>
-<section id="slide-5-1">
-<h3 id="5-1"><span class="section-number-3">5.1.</span> Assets en vibe coding</h3>
-</section>
-</section>
-<section>
-<section id="slide-6">
-<h2 id="6"><span class="section-number-2">6.</span> Desarrollo con IA (II)</h2>
-<div class="outline-text-2" id="text-6">
-</div>
-</section>
-<section id="slide-6-1">
-<h3 id="6-1"><span class="section-number-3">6.1.</span> Documentación y QA con v</h3>
-</section>
-</section>
-<section>
-<section id="slide-7">
-<h2 id="7"><span class="section-number-2">7.</span> Desarrollo con IA (III)</h2>
-<div class="outline-text-2" id="text-7">
-</div>
-</section>
-<section id="slide-7-1">
-<h3 id="7-1"><span class="section-number-3">7.1.</span> Evolución y adaptación a cambios</h3>
 </section>
 </section>
 </div>
