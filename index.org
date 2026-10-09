@@ -755,7 +755,7 @@ Usaremos [[https://code.visualstudio.com/][VSCode]] y su integración con agente
 
 [[file:clipboard-20261005T105513.png]]
 
-   (pero ahora hay que usar [[https://antigravity.google/][Antigravity]] )
+(pero ahora hay que usar [[https://antigravity.google/][Antigravity]])
 
 
 ** Cuentas UCM para usar modelos
@@ -849,48 +849,13 @@ Hay que:
 *** 
 Por dentro, Antigravity tiene el mismo editor que VSCode 
    
-*** Gemini CLI
-
-Gemini está incluido actualmente en su licencia Google Workspace for Education de la UCM con *tuusuario@ucm.es*
-
-*Pero hay que crear un proyecto de Google*
-
-*** 2. Instala Gemini CLI
-
-#+BEGIN_SRC sh
-[usuario$/]$ npm install -g @google/gemini-cli
-#+END_SRC
-
-o, si no tienes permisos de escritura como administrador (sin =-g=):
-
-#+BEGIN_SRC sh
-  [usuario$/proyecto/]$ npm init --yes
-  [usuario$/proyecto]$ npm install @google/gemini-cli
-#+END_SRC
-
-Después:
-
-#+BEGIN_SRC sh
-[usuario$/proyecto/]$ gemini
-#+END_SRC
-
-*** 
-
-Cuando Gemini CLI pregunte cómo quieres autenticarte (=1. Sign in with Google= no funciona ya):
-
-#+BEGIN_SRC text
-2. Use Gemini API Key
-#+END_SRC
-
-
-Y se abrirá el navegador para completar el inicio de sesión, crear el proyecto y darnos una clave API
 
 
 *** Devin
 
 https://devin.ai/
 
-*** NEXT Google AI Studio
+*** Google AI Studio
 
 https://aistudio.google.com/
 
@@ -936,3 +901,5 @@ Generar una aventura conversacional tipo Zork (con Gemini Antigravity, por ejemp
 * Desarrollo en Phaser con IA (I)
 * Desarrollo en Phaser con IA (II)
 * Desarrollo con IA (I)
+* Desarrollo con IA (II)
+* Desarrollo con IA (III)
