@@ -4021,9 +4021,6 @@ Crear mediante Phaser un marcador para señalar objetivos interactivos
 
 - Azul =0x2f80ed=
 - Amarillo
-
-
-
 #+end_src
 
 
@@ -4313,8 +4310,9 @@ Debe especificar
 - Necesidad de bucle
 
 
+#+REVEAL: split
 
-
+Pero os puede generar una música con sintentizador muy aparente 
 
 ** Biblioteca de prompts
 
