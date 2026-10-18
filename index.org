@@ -3787,6 +3787,9 @@ No incluyas explicaciones antes ni después del SVG
 #+end_src
 
 
+
+
+
 *** Prompt para modificar un SVG
 
 #+begin_src markdown
@@ -4198,6 +4201,18 @@ El agente puede inspeccionar los archivos y generar automáticamente
 - Código de precarga
 - Avisos sobre imágenes demasiado grandes o pesadas
 
+*** Pasar de código a asset
+
+Es muy posible que, trabajando en Phaser, el agente cree geometría desde código con Phaser
+
+Se le puede pedir que lo traduzca a SVG (por ejemplo) y que lo convierta en /asset/ externo para que se pueda editar a mano
+
+#+REVEAL: split
+
+Se puede hacer también con mapas, música, HUD...
+
+La calidad dependerá (como siempre) del agente y el LLM
+  
 ** Audio
 
 *** El papel del agente en los assets musicales
