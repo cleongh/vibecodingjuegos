@@ -796,7 +796,7 @@ Pulsa en *=Start an application=*
 Completa la verificación como estudiante.
 
 Los estudiantes verificados obtienen acceso gratuito a
-*GitHub Copilot Student*
+*GitHub Copilot Student* (200 créditos para estudiantes)
 
 *** Instala Copilot CLI
 
