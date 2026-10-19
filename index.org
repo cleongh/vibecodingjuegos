@@ -1193,6 +1193,10 @@ Deberíamos *siempre* leer el diff y evaluar antes de aplicar
 - *Agente*: reúne contexto, edita, ejecuta herramientas, valida e itera
 - Cuanta más autonomía damos, más importantes son límites y revisión
 
+** Modelo local
+
+[[https://ollama.com/][ollama]] junto con un arnés (/harness/) como [[https://cline.bot/][Cline]] os puede valer para usar solo herramientas de código abierto
+
 ** Vigilar
 
 - El proceso
