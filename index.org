@@ -727,7 +727,7 @@ Por eso gestionar el contexto es también una cuestión de eficiencia
 - [[https://github.com/features/copilot][GitHub Copilot]]
 - [[https://cursor.com/][Cursor]]
 - [[https://aws.amazon.com/codewhisperer/][Amazon Q Developer]]
-- [[https://developers.google.com/gemini-code-assist][Gemini Code Assist]]
+- [[https://developers.google.com/gemini-code-assist][Antigravity Code Assist]]
 - [[https://devin.ai/desktop][Devin Desktop]]
 
 *** Modelos generativos integrados de juegos
@@ -844,10 +844,13 @@ Hay que:
 1. Bajarlo
 2. Usar una cuenta personal (la UCM aún no da permisos)
 
-*** 
+#+REVEAL: split
+
 Por dentro, Antigravity tiene el mismo editor que VSCode 
    
+#+REVEAL: split
 
+También está el [[https://antigravity.google/product/antigravity-cli/][agente de línea de comandos de Antigravity]]
 
 *** Devin
 
@@ -1081,6 +1084,11 @@ Solución: controlar el contexto, decirle al agente lo que queremos que esté y 
 
 *Enfocar nuestra query* para contextos específicos
 
+** Idioma de prompts
+
+- Para LLMs grandes, la diferencia es casi nula (pero hay más tokens en español que en inglés)
+- Para preguntas muy técnicas o específicas, es posible que en inglés ajuste mejor
+- En LLMs pequeños, en general (a no ser que tengan mucho en español) es mejor en inglés
 
 ** JavaScript
 
