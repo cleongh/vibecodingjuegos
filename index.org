@@ -1240,6 +1240,7 @@ Es muy útil tener archivos de texto con información general para prompts (y no
 
 Cuando el LLM no esté haciendo lo que queramos, añadimos una frase con restricciones → si funciona, *lo agregamos al archivo*
 
+** Revisión de conceptos y alcance
 
 ** Tareas
 
@@ -2550,7 +2551,6 @@ Tener primer prototipo jugable con Phaser
 - Apuntar lo que vayamos aprendiendo
 - *Sistema de tareas* ("producción")
   
-
 * Desarrollo con IA (I)
 
 
